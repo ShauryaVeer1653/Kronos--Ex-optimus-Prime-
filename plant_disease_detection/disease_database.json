@@ -1,0 +1,1918 @@
+{
+  "version": "1.0",
+  "description": "Comprehensive plant disease database for Indian agriculture — 30+ crops, 150+ diseases",
+  "crops": {
+    "rice": {
+      "hindi_name": "चावल / धान",
+      "scientific_name": "Oryza sativa",
+      "image_tips": "Focus on leaf blade, leaf sheath, and panicle. Look for lesions, spots, and discoloration.",
+      "diseases": {
+        "blast": {
+          "pathogen": "Magnaporthe oryzae",
+          "type": "fungal",
+          "affected_parts": ["leaf", "panicle", "neck"],
+          "symptoms": [
+            "Diamond-shaped lesions on leaves with gray centers and brown borders",
+            "Neck blast causes panicle breakage",
+            "Leaf spots may merge causing large blighted areas",
+            "Severe infection causes complete leaf drying"
+          ],
+          "favorable_conditions": "High humidity (>90%), temperature 25-28°C, excessive nitrogen, standing water",
+          "organic_treatment": [
+            "Neem oil spray (5ml/L) every 10 days",
+            "Pseudomonas fluorescens spray (10g/L)",
+            "Trichoderma viride soil application (4g/kg seed)",
+            "Balanced fertilization — avoid excess nitrogen"
+          ],
+          "chemical_treatment": [
+            "Tricyclazole 75% WP @ 0.6g/L — spray at booting stage",
+            "Isoprothiolane 40% EC @ 1.5ml/L",
+            "Carbendazim 50% WP @ 1g/L"
+          ],
+          "prevention": [
+            "Use resistant varieties (e.g., Swarna Sub-1, IR-64)",
+            "Treat seeds with Trichoderma (4g/kg) or Carbendazim (2g/kg)",
+            "Maintain proper spacing (20x15 cm)",
+            "Avoid excess nitrogen — apply in splits",
+            "Maintain 5cm water level, drain periodically"
+          ],
+          "severity": "high",
+          "yield_loss": "30-80%"
+        },
+        "bacterial_blight": {
+          "pathogen": "Xanthomonas oryzae pv. oryzae",
+          "type": "bacterial",
+          "affected_parts": ["leaf", "leaf_sheath", "panicle"],
+          "symptoms": [
+            "Water-soaked streaks on leaf tips and margins",
+            "Lesions turn yellow to white, irregular shaped",
+            "Leaf wilting and drying from tips downward",
+            "Grains may become discolored and empty"
+          ],
+          "favorable_conditions": "Flooding, high temperature (28-34°C), wounds from insect damage",
+          "organic_treatment": [
+            "Bordeaux mixture (1% copper sulfate + quicklime)",
+            "Pseudomonas fluorescens (10g/L) foliar spray",
+            "Neem cake application (250 kg/ha) in soil"
+          ],
+          "chemical_treatment": [
+            "Copper hydroxide 77% WP @ 2g/L",
+            "Streptocycline (0.5g/L) + Zinc sulphate (0.5g/L)",
+            "Kasugamycin 2% WP @ 1.5g/L"
+          ],
+          "prevention": [
+            "Use resistant varieties (Samba Mahsuri, Improved Pusa Basmati)",
+            "Balanced irrigation — avoid continuous flooding",
+            "Remove and burn infected plant debris",
+            "Seed treatment with hot water (52°C for 30 min)"
+          ],
+          "severity": "high",
+          "yield_loss": "20-60%"
+        },
+        "brown_spot": {
+          "pathogen": "Bipolaris oryzae",
+          "type": "fungal",
+          "affected_parts": ["leaf", "grain"],
+          "symptoms": [
+            "Circular to oval brown spots with yellow halo",
+            "Spots coalesce causing leaf drying",
+            "Dark brown spots on grain reducing quality",
+            "Severe infection causes 'Karmin' disease — grain discoloration"
+          ],
+          "favorable_conditions": "Nutrient-poor soil, low nitrogen, high humidity",
+          "organic_treatment": [
+            "Neem oil spray (3ml/L)",
+            "Balanced NPK fertilization",
+            "Organic matter enrichment"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Carbendazim 50% WP @ 1g/L",
+            "Propiconazole 25% EC @ 1ml/L"
+          ],
+          "prevention": [
+            "Ensure balanced nutrition — especially N, K, Si",
+            "Use healthy seeds from disease-free plants",
+            "Proper water management"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-40%"
+        },
+        "sheath_blight": {
+          "pathogen": "Rhizoctonia solani",
+          "type": "fungal",
+          "affected_parts": ["leaf_sheath", "stem"],
+          "symptoms": [
+            "Oval or ellipsoidal lesions on leaf sheaths near waterline",
+            "Lesions have grayish-white center with brown margin",
+            "Disease progresses upward on the plant",
+            "Severe cases cause lodging and panicle blanking"
+          ],
+          "favorable_conditions": "Dense planting, high nitrogen, standing water, 28-32°C",
+          "organic_treatment": [
+            "Pseudomonas fluorescens (10g/L) spray",
+            "Trichoderma viride soil application",
+            "Reduce plant density"
+          ],
+          "chemical_treatment": [
+            "Validamycin 3% AS @ 5ml/L",
+            "Hexaconazole 5% EC @ 2ml/L",
+            "Carbendazim 50% WP @ 1g/L"
+          ],
+          "prevention": [
+            "Avoid excess nitrogen and dense planting",
+            "Maintain proper water management — periodic draining",
+            "Use resistant/tolerant varieties"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-35%"
+        },
+        "tungro": {
+          "pathogen": "Rice tungro bacilliform virus (RTBV) + Rice tungro spherical virus (RTSV)",
+          "type": "viral",
+          "affected_parts": ["leaf", "whole_plant"],
+          "symptoms": [
+            "Yellow-orange discoloration of leaves",
+            "Stunted growth, reduced tillering",
+            "Grains may be discolored and chaffy",
+            "Plants appear bunched and short"
+          ],
+          "favorable_conditions": "Green leafhopper (Nephotettix virescens) vector, transplanting age",
+          "organic_treatment": [
+            "Yellow sticky traps for leafhopper monitoring",
+            "Neem oil spray (5ml/L) to repel vectors",
+            "Remove and destroy infected plants early"
+          ],
+          "chemical_treatment": [
+            "Imidacloprid 17.8% SL @ 0.5ml/L (for leafhopper)",
+            "Thiamethoxam 25% WG @ 0.3g/L",
+            "Phenthoate 50% EC @ 2ml/L"
+          ],
+          "prevention": [
+            "Use resistant varieties",
+            "Synchronous planting in the area",
+            "Control leafhopper vector early",
+            "Remove infected seedlings before transplanting"
+          ],
+          "severity": "high",
+          "yield_loss": "20-90%"
+        }
+      }
+    },
+    "wheat": {
+      "hindi_name": "गेहूं",
+      "scientific_name": "Triticum aestivum",
+      "image_tips": "Focus on leaf blades, check for rust pustules, brown lesions, and powdery growth.",
+      "diseases": {
+        "yellow_rust": {
+          "pathogen": "Puccinia striiformis f. sp. tritici",
+          "type": "fungus",
+          "affected_parts": ["leaf"],
+          "symptoms": [
+            "Yellow-orange linear streaks/pustules on leaves",
+            "Pustules arranged in rows along leaf veins",
+            "Leaves may turn completely yellow and dry",
+            "Early infection causes severe yield loss"
+          ],
+          "favorable_conditions": "Cool temperature (10-15°C), high humidity, dew, cloudy weather",
+          "organic_treatment": [
+            "Sulphur dust application (10 kg/ha)",
+            "Neem oil spray (5ml/L)",
+            "Balanced nutrition — avoid excess nitrogen"
+          ],
+          "chemical_treatment": [
+            "Propiconazole 25% EC @ 1ml/L — at first appearance",
+            "Tebuconazole 25.9% EC @ 1ml/L",
+            "Mancozeb 75% WP @ 2.5g/L"
+          ],
+          "prevention": [
+            "Use resistant varieties (HD-3226, WH-1124, DBW-187)",
+            "Timely sowing — avoid late sowing",
+            "Balanced fertilization",
+            "Monitor fields during cool, humid weather"
+          ],
+          "severity": "high",
+          "yield_loss": "15-70%"
+        },
+        "brown_rust": {
+          "pathogen": "Puccinia triticina",
+          "type": "fungus",
+          "affected_parts": ["leaf"],
+          "symptoms": [
+            "Brown, oval to circular raised pustules on leaves",
+            "Pustules rupture epidermis exposing brown spores",
+            "Leaves yellow and senesce prematurely",
+            "Rust pustules may also appear on leaf sheaths"
+          ],
+          "favorable_conditions": "Moderate temperature (15-22°C), high humidity, alternate host (barberry)",
+          "organic_treatment": [
+            "Sulphur application (15 kg/ha)",
+            "Trichoderma-based bio-fungicide foliar spray",
+            "Roguing alternate hosts"
+          ],
+          "chemical_treatment": [
+            "Propiconazole 25% EC @ 1ml/L",
+            "Azoxystrobin 23% SC @ 1ml/L",
+            "Mancozeb 75% WP @ 2.5g/L"
+          ],
+          "prevention": [
+            "Resistant varieties (HD-3059, PBW-621)",
+            "Destroy barberry bushes (alternate host)",
+            "Timely sowing and balanced fertilization"
+          ],
+          "severity": "medium",
+          "yield_loss": "5-45%"
+        },
+        "karnal_bunt": {
+          "pathogen": "Tilletia indica",
+          "type": "fungus",
+          "affected_parts": ["grain"],
+          "symptoms": [
+            "部分 grains replaced by black powdery mass (bunt balls)",
+            "Fishy odor from infected grains",
+            "Partially infected grains may look normal externally",
+            "Broken grains release dark brown to black spores"
+          ],
+          "favorable_conditions": "Cool temperature (15-22°C), high humidity at flowering, dew",
+          "organic_treatment": [
+            "Neem kernel extract seed treatment",
+            "Trichoderma viride seed treatment (4g/kg)",
+            "Remove and destroy infected grain"
+          ],
+          "chemical_treatment": [
+            "Carbendazim 50% WP seed treatment @ 2g/kg seed",
+            "Vitavax (Carboxin) 75% WS @ 2g/kg seed",
+            "Tebuconazole 2% DS @ 10g/kg seed"
+          ],
+          "prevention": [
+            "Use resistant varieties (HD-2987, WH-1105, PBW-677)",
+            "Seed treatment with Carbendazim or Vitavax",
+            "Timely sowing — avoid early sowing",
+            "Maintain proper field drainage"
+          ],
+          "severity": "medium",
+          "yield_loss": "5-35%"
+        },
+        "powdery_mildew": {
+          "pathogen": "Blumeria graminis f. sp. tritici",
+          "type": "fungus",
+          "affected_parts": ["leaf", "stem", "spike"],
+          "symptoms": [
+            "White powdery fungal growth on leaf surface",
+            "Leaves turn yellow and may curl upward",
+            "Stunting of infected plants",
+            "In severe cases, spikes may also be covered"
+          ],
+          "favorable_conditions": "Warm days (20-25°C), cool nights, high humidity, dry leaf surface",
+          "organic_treatment": [
+            "Sulphur dust (10-15 kg/ha) at first sign",
+            "Milk spray (20% solution) — every 5 days",
+            "Neem oil (5ml/L) foliar spray"
+          ],
+          "chemical_treatment": [
+            "Sulphur 80% WP @ 3g/L",
+            "Propiconazole 25% EC @ 1ml/L",
+            "Tebuconazole 25.9% EC @ 1ml/L"
+          ],
+          "prevention": [
+            "Use resistant varieties",
+            "Balanced fertilization — avoid excess nitrogen",
+            "Proper plant spacing for air circulation"
+          ],
+          "severity": "medium",
+          "yield_loss": "5-30%"
+        }
+      }
+    },
+    "tomato": {
+      "hindi_name": "टमाटर",
+      "scientific_name": "Solanum lycopersicum",
+      "image_tips": "Check leaves, stems, and fruits for spots, wilting, curling, and mold.",
+      "diseases": {
+        "early_blight": {
+          "pathogen": "Alternaria solani",
+          "type": "fungus",
+          "affected_parts": ["leaf", "stem", "fruit"],
+          "symptoms": [
+            "Concentric ring pattern (target-like) on older leaves first",
+            "Dark brown to black lesions with yellow halo",
+            "Lesions may appear on stems near soil",
+            "Fruit lesions are dark, sunken, and may have fungal growth"
+          ],
+          "favorable_conditions": "Warm (25-30°C), alternating wet/dry, low plant vigor",
+          "organic_treatment": [
+            "Neem oil (5ml/L) spray every 10 days",
+            "Bordeaux mixture (1%) spray",
+            "Mulching to prevent soil splash",
+            "Remove infected lower leaves"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Chlorothalonil 75% WP @ 2g/L",
+            "Azoxystrobin 23% SC @ 1.5ml/L"
+          ],
+          "prevention": [
+            "Crop rotation (3-year minimum)",
+            "Remove plant debris after harvest",
+            "Balanced fertilization",
+            "Stake plants for air circulation",
+            "Avoid overhead irrigation"
+          ],
+          "severity": "high",
+          "yield_loss": "20-50%"
+        },
+        "late_blight": {
+          "pathogen": "Phytophthora infestans",
+          "type": "oomycete",
+          "affected_parts": ["leaf", "stem", "fruit"],
+          "symptoms": [
+            "Large, water-soaked, dark green to brown lesions",
+            "White fuzzy growth on leaf undersides in humid conditions",
+            "Rapid wilting of affected branches",
+            "Fruit shows firm, brown, rubbery rot"
+          ],
+          "favorable_conditions": "Cool (15-22°C), very high humidity (>90%), foggy/dewy conditions",
+          "organic_treatment": [
+            "Bordeaux mixture (1%) — preventive spray",
+            "Baking soda spray (5g/L + 2ml dish soap/L)",
+            "Remove and destroy infected plants immediately"
+          ],
+          "chemical_treatment": [
+            "Metalaxyl + Mancozeb (Ridomil Gold) @ 2.5g/L",
+            "Fosetyl铝 (Aliette) @ 3g/L",
+            "Dimethomorph 50% WP @ 2g/L"
+          ],
+          "prevention": [
+            "Use resistant/tolerant varieties",
+            "Ensure good air circulation — proper spacing",
+            "Avoid overhead irrigation",
+            "Spray preventively during cool, humid weather"
+          ],
+          "severity": "very_high",
+          "yield_loss": "50-100%"
+        },
+        "bacterial_wilt": {
+          "pathogen": "Ralstonia solanacearum",
+          "type": "bacterial",
+          "affected_parts": ["stem", "whole_plant"],
+          "symptoms": [
+            "Sudden wilting of lower leaves during hot hours",
+            "Wilting may recover at night initially, then becomes permanent",
+            "Cut stem shows milky white bacterial ooze in water",
+            "Root system appears water-soaked and brown"
+          ],
+          "favorable_conditions": "Warm (30-37°C), waterlogged or acidic soils, high moisture",
+          "organic_treatment": [
+            "Trichoderma harzianum soil drench (10g/L)",
+            "Pseudomonas fluorescens (10g/L) soil application",
+            "Bio-fumigation with mustard greens",
+            "Raise beds for better drainage"
+          ],
+          "chemical_treatment": [
+            "Copper hydroxide 77% WP @ 3g/L — soil drench",
+            "Streptocycline (0.5g/L) soil drench",
+            "Fosetyl-aluminum 80% WP @ 3g/L"
+          ],
+          "prevention": [
+            "Graft onto resistant rootstock (e.g., HP-1, Arka Kanchan)",
+            "Raise soil pH to 7.0+ with lime",
+            "Crop rotation (3-4 years)",
+            "Good drainage — avoid waterlogging",
+            "Disease-free transplants only"
+          ],
+          "severity": "very_high",
+          "yield_loss": "50-100%"
+        },
+        "leaf_curl_virus": {
+          "pathogen": "Tomato Leaf Curl Virus (ToLCV) — Whitefly transmitted",
+          "type": "viral",
+          "affected_parts": ["leaf", "whole_plant"],
+          "symptoms": [
+            "Upward curling and cupping of leaves",
+            "Chlorosis (yellowing) of leaf margins",
+            "Stunted growth with small, thickened leaves",
+            "Flower drop and reduced fruit set"
+          ],
+          "favorable_conditions": "Whitefly (Bemisia tabaci) infestation, hot and dry conditions",
+          "organic_treatment": [
+            "Yellow sticky traps for whitefly monitoring",
+            "Neem oil (5ml/L) spray for whitefly control",
+            "Remove and destroy infected plants immediately",
+            "Reflective mulch to repel whiteflies"
+          ],
+          "chemical_treatment": [
+            "Imidacloprid 17.8% SL @ 0.5ml/L (for whitefly)",
+            "Thiamethoxam 25% WG @ 0.3g/L",
+            "Diafenthiuron 50% WP @ 1.2g/L"
+          ],
+          "prevention": [
+            "Use resistant/tolerant hybrids",
+            "Install yellow sticky traps (12/ha)",
+            "Use insect-proof net house for nurseries",
+            "Control weeds that serve as virus reservoir"
+          ],
+          "severity": "high",
+          "yield_loss": "30-80%"
+        },
+        "septoria_leaf_spot": {
+          "pathogen": "Septoria lycopersici",
+          "type": "fungus",
+          "affected_parts": ["leaf"],
+          "symptoms": [
+            "Small, circular spots with dark borders and tan/gray centers",
+            "Tiny black dots (pycnidia) visible in spots",
+            "Lower leaves affected first, defoliation upward",
+            "Severe defoliation reduces fruit quality and yield"
+          ],
+          "favorable_conditions": "Warm (20-25°C), wet/humid conditions, rain splash",
+          "organic_treatment": [
+            "Remove and destroy infected leaves",
+            "Mulching to reduce soil splash",
+            "Bordeaux mixture (1%) preventive spray"
+          ],
+          "chemical_treatment": [
+            "Chlorothalonil 75% WP @ 2g/L",
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Azoxystrobin 23% SC @ 1.5ml/L"
+          ],
+          "prevention": [
+            "Crop rotation",
+            "Remove and destroy crop debris",
+            "Avoid overhead irrigation",
+            "Stake plants for airflow"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-30%"
+        }
+      }
+    },
+    "potato": {
+      "hindi_name": "आलू",
+      "scientific_name": "Solanum tuberosum",
+      "image_tips": "Check leaves for blight lesions, stems for blackleg, tubers for rot.",
+      "diseases": {
+        "late_blight": {
+          "pathogen": "Phytophthora infestans",
+          "type": "oomycete",
+          "affected_parts": ["leaf", "stem", "tuber"],
+          "symptoms": [
+            "Water-soaked, dark green to brown lesions on leaves",
+            "White fuzzy growth on leaf undersides",
+            "Black/brown lesions on stems",
+            "Tubers show reddish-brown dry rot under skin"
+          ],
+          "favorable_conditions": "Cool (15-22°C), high humidity (>90%), foggy conditions",
+          "organic_treatment": [
+            "Bordeaux mixture (1%) preventive spray",
+            "Remove and destroy infected plants",
+            "Ensure good drainage"
+          ],
+          "chemical_treatment": [
+            "Metalaxyl + Mancozeb (Ridomil Gold) @ 2.5g/L",
+            "Chlorothalonil 75% WP @ 2g/L",
+            "Fosetyl-aluminum 80% WP @ 3g/L"
+          ],
+          "prevention": [
+            "Use certified disease-free seed tubers",
+            "Plant resistant varieties (Kufri Jyoti, Kufri Chipsona)",
+            "Timely harvest before rain",
+            "Spray preventively during favorable weather"
+          ],
+          "severity": "very_high",
+          "yield_loss": "40-100%"
+        },
+        "early_blight": {
+          "pathogen": "Alternaria solani",
+          "type": "fungus",
+          "affected_parts": ["leaf", "tuber"],
+          "symptoms": [
+            "Target-like concentric ring lesions on older leaves",
+            "Dark brown spots on tubers — corky dry rot",
+            "Premature defoliation",
+            "Reduced tuber size and yield"
+          ],
+          "favorable_conditions": "Warm (25-30°C), alternating wet/dry, low plant vigor, nitrogen deficiency",
+          "organic_treatment": [
+            "Neem oil (5ml/L) spray",
+            "Mulching to prevent splash",
+            "Balanced nitrogen fertilization"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Chlorothalonil 75% WP @ 2g/L",
+            "Azoxystrobin 23% SC @ 1.5ml/L"
+          ],
+          "prevention": [
+            "Crop rotation (3-year minimum)",
+            "Balanced fertilization — adequate nitrogen",
+            "Remove volunteer potato plants",
+            "Cull piles management"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-30%"
+        },
+        "blackleg": {
+          "pathogen": "Pectobacterium carotovorum (soft rot) + Dickeya spp.",
+          "type": "bacterial",
+          "affected_parts": ["stem", "tuber"],
+          "symptoms": [
+            "Black, slimy rot at stem base",
+            "Wilting of above-ground parts",
+            "Tubers show wet, creamy rot",
+            "Foul smell from rotting tissue"
+          ],
+          "favorable_conditions": "Warm (25-30°C), wet soil, poor drainage, infected seed",
+          "organic_treatment": [
+            "Use certified healthy seed tubers",
+            "Improve drainage",
+            "Remove and destroy infected plants"
+          ],
+          "chemical_treatment": [
+            "Copper hydroxide 77% WP — foliar spray",
+            "Streptocycline (0.5g/L) — stem injection",
+            "Mancozeb + Metalaxyl tuber treatment"
+          ],
+          "prevention": [
+            "Use certified seed tubers only",
+            "Treat seed with fungicide before planting",
+            "Ensure good drainage",
+            "Avoid wounding tubers during harvest"
+          ],
+          "severity": "high",
+          "yield_loss": "20-60%"
+        },
+        "scab": {
+          "pathogen": "Streptomyces scabies",
+          "type": "bacterial",
+          "affected_parts": ["tuber"],
+          "symptoms": [
+            "Rough, corky, raised lesions on tuber surface",
+            "Scab patches are tan to dark brown",
+            "Lesions may crack open",
+            "Cosmetic damage reducing market value"
+          ],
+          "favorable_conditions": "Alkaline soil (pH >7.0), dry conditions at tuber formation",
+          "organic_treatment": [
+            "Lower soil pH to 5.0-5.5 with elemental sulfur",
+            "Avoid lime application before potato",
+            "Maintain adequate soil moisture during tuberization"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP — foliar spray during tuberization",
+            "Streptomycin 0.5g/L soil drench"
+          ],
+          "prevention": [
+            "Maintain soil pH 5.0-5.5",
+            "Use resistant varieties",
+            "Adequate moisture during tuber formation",
+            "Avoid fresh manure application"
+          ],
+          "severity": "low",
+          "yield_loss": "5-15%"
+        }
+      }
+    },
+    "grape": {
+      "hindi_name": "अंगूर",
+      "scientific_name": "Vitis vinifera",
+      "image_tips": "Check leaves for powdery white growth, berries for rot, shoots for cankers.",
+      "diseases": {
+        "downy_mildew": {
+          "pathogen": "Plasmopara viticola",
+          "type": "oomycete",
+          "affected_parts": ["leaf", "shoot", "berry"],
+          "symptoms": [
+            "Yellow, translucent oil spots on upper leaf surface",
+            "White cottony growth on leaf undersides",
+            "Shoots become stunted and distorted",
+            "Berries shrivel and dry up"
+          ],
+          "favorable_conditions": "Warm (20-25°C), very high humidity, rain, dew",
+          "organic_treatment": [
+            "Bordeaux mixture (1%) — spray before and after rain",
+            "Potassium bicarbonate (5g/L) spray",
+            "Sulfur-based fungicide"
+          ],
+          "chemical_treatment": [
+            "Metalaxyl 8% WP @ 5g/L",
+            "Fosetyl-aluminum 80% WP @ 3g/L",
+            "Dimethomorph 50% WP @ 2g/L"
+          ],
+          "prevention": [
+            "Maintain good canopy management — pruning",
+            "Ensure air circulation",
+            "Spray preventively during monsoon",
+            "Remove infected shoots"
+          ],
+          "severity": "high",
+          "yield_loss": "25-75%"
+        },
+        "powdery_mildew": {
+          "pathogen": "Erysiphe necator (Uncinula necator)",
+          "type": "fungus",
+          "affected_parts": ["leaf", "shoot", "berry"],
+          "symptoms": [
+            "White powdery growth on leaves, shoots, and berries",
+            "Leaves may curl and distort",
+            "Berries crack and may develop secondary infections",
+            "Shoot growth is stunted and internodes shortened"
+          ],
+          "favorable_conditions": "Warm (25-30°C), high humidity but dry leaf surface, shade",
+          "organic_treatment": [
+            "Sulfur dust (20-25 kg/ha) — apply when temp < 35°C",
+            "Milk spray (40% solution) — every 5-7 days",
+            "Baking soda spray (5g/L + 2ml soap/L)"
+          ],
+          "chemical_treatment": [
+            "Sulphur 80% WP @ 3g/L",
+            "Penconazole 10% EC @ 0.5ml/L",
+            "Tebuconazole 25.9% EC @ 1ml/L"
+          ],
+          "prevention": [
+            "Proper canopy management — prune for air circulation",
+            "Remove wild grape vines (alternate hosts)",
+            "Timely sprays from bud break onward"
+          ],
+          "severity": "high",
+          "yield_loss": "20-60%"
+        },
+        "anthracnose": {
+          "pathogen": "Elsinoe ampelina",
+          "type": "fungus",
+          "affected_parts": ["leaf", "shoot", "berry"],
+          "symptoms": [
+            "Small, circular, sunken spots on berries",
+            "Angular spots on leaves with brown centers",
+            "Shoot lesions cause dieback",
+            "Berries crack and may drop"
+          ],
+          "favorable_conditions": "Warm (25-30°C), wet conditions, rain splash",
+          "organic_treatment": [
+            "Bordeaux mixture (1%) spray",
+            "Prune affected shoots and destroy",
+            "Maintain canopy openness"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Carbendazim 50% WP @ 1g/L",
+            "Chlorothalonil 75% WP @ 2g/L"
+          ],
+          "prevention": [
+            "Prune and train vines for good air circulation",
+            "Spray before rain during growing season",
+            "Remove and burn pruned material"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-40%"
+        },
+        "bacterial_blight": {
+          "pathogen": "Xanthomonas campestris pv. viticola",
+          "type": "bacterial",
+          "affected_parts": ["leaf", "shoot", "berry"],
+          "symptoms": [
+            "Water-soaked angular lesions on leaves",
+            "Lesions turn brown and dry, falling out to give shot-hole effect",
+            "Shoot tips wilt and die back",
+            "Berries shrivel and dry"
+          ],
+          "favorable_conditions": "Warm, wet conditions, rain splash, wounds from pruning/hail",
+          "organic_treatment": [
+            "Copper-based sprays (Bordeaux mixture)",
+            "Remove and destroy infected material",
+            "Wound protection after pruning"
+          ],
+          "chemical_treatment": [
+            "Copper hydroxide 77% WP @ 3g/L",
+            "Streptocycline (0.5g/L)",
+            "Copper oxychloride 50% WP @ 3g/L"
+          ],
+          "prevention": [
+            "Avoid overhead irrigation",
+            "Prune in dry weather",
+            "Use disease-free planting material",
+            "Sanitize pruning tools"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-30%"
+        }
+      }
+    },
+    "mango": {
+      "hindi_name": "आम",
+      "scientific_name": "Mangifera indica",
+      "image_tips": "Check leaves for powdery coating, fruits for spots and rot, flowers for blight.",
+      "diseases": {
+        "powdery_mildew": {
+          "pathogen": "Oidium mangiferae",
+          "type": "fungus",
+          "affected_parts": ["leaf", "flower", "fruit"],
+          "symptoms": [
+            "White powdery coating on leaves, flowers, and young fruit",
+            "Leaves may curl and become distorted",
+            "Flower drop and poor fruit set",
+            "Fruit surface shows powdery patches — reduced market value"
+          ],
+          "favorable_conditions": "Warm days, cool nights, high humidity, poor air circulation",
+          "organic_treatment": [
+            "Sulfur dust (10-15 kg/ha) at flowering",
+            "Neem oil (5ml/L) spray",
+            "Potassium bicarbonate (5g/L) spray"
+          ],
+          "chemical_treatment": [
+            "Sulphur 80% WP @ 3g/L",
+            "Penconazole 10% EC @ 0.5ml/L",
+            "Hexaconazole 5% EC @ 2ml/L"
+          ],
+          "prevention": [
+            "Prune for air circulation",
+            "Remove fallen leaves and debris",
+            "Spray preventively at flower initiation"
+          ],
+          "severity": "high",
+          "yield_loss": "20-60%"
+        },
+        "anthracnose": {
+          "pathogen": "Colletotrichum gloeosporioides",
+          "type": "fungus",
+          "affected_parts": ["leaf", "fruit", "flower"],
+          "symptoms": [
+            "Dark brown to black spots on leaves",
+            "Sunken, dark spots on fruit — may exude gum",
+            "Flower blight — flowers turn brown and drop",
+            "Fruit rot during ripening — large brown patches"
+          ],
+          "favorable_conditions": "Warm (25-30°C), humid, rainy conditions, post-harvest storage",
+          "organic_treatment": [
+            "Bordeaux mixture (1%) spray at flowering and fruit development",
+            "Remove and destroy infected fruits",
+            "Proper post-harvest handling — avoid bruising"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Carbendazim 50% WP @ 1g/L",
+            "Prochloraz 45% EC @ 1ml/L — post-harvest dip"
+          ],
+          "prevention": [
+            "Prune for canopy openness",
+            "Spray at flower initiation and fruit set",
+            "Harvest at proper maturity — avoid overripe",
+            "Hot water treatment (52°C for 5 min) for post-harvest"
+          ],
+          "severity": "high",
+          "yield_loss": "20-50%"
+        },
+        "bacterial_canker": {
+          "pathogen": "Xanthomonas citri pv. mangiferaeindicae",
+          "type": "bacterial",
+          "affected_parts": ["leaf", "fruit", "stem"],
+          "symptoms": [
+            "Raised, corky, warty lesions on fruit",
+            "Angular water-soaked lesions on leaves",
+            "Cracks on stem bark",
+            "Premature fruit drop"
+          ],
+          "favorable_conditions": "Warm, wet conditions, rain splash, wounds",
+          "organic_treatment": [
+            "Copper oxychloride (3g/L) spray",
+            "Remove and destroy infected plant parts",
+            "Protect wounds from rain"
+          ],
+          "chemical_treatment": [
+            "Copper hydroxide 77% WP @ 3g/L",
+            "Streptocycline (0.5g/L) spray",
+            "Copper oxychloride 50% WP @ 3g/L"
+          ],
+          "prevention": [
+            "Avoid overhead irrigation",
+            "Prune in dry weather",
+            "Use disease-free grafting material",
+            "Copper spray during monsoon"
+          ],
+          "severity": "high",
+          "yield_loss": "15-50%"
+        },
+        "dieback": {
+          "pathogen": "Lasiodiplodia theobromae (Botryodiplodia)",
+          "type": "fungus",
+          "affected_parts": ["branch", "fruit"],
+          "symptoms": [
+            "Dieback of twigs and branches from tips",
+            "Dark brown to black lesions on branches",
+            "Gumming from affected areas",
+            "Fruit end rot — blackening from tip"
+          ],
+          "favorable_conditions": "Warm, humid conditions, drought stress, wound entry",
+          "organic_treatment": [
+            "Prune affected branches 30cm below infection",
+            "Apply paste of Trichoderma + cow dung on cut ends",
+            "Maintain tree vigor with balanced nutrition"
+          ],
+          "chemical_treatment": [
+            "Carbendazim 50% WP @ 1g/L — spray and paint cut ends",
+            "Copper hydroxide 77% WP @ 3g/L",
+            "Metalaxyl + Mancozeb paint on cut wounds"
+          ],
+          "prevention": [
+            "Maintain tree nutrition and water",
+            "Prune dead wood promptly",
+            "Avoid mechanical wounds",
+            "Protect pruning cuts with fungicide paste"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-30%"
+        }
+      }
+    },
+    "citrus": {
+      "hindi_name": "नींबू / संतरा / मौसमी",
+      "scientific_name": "Citrus spp.",
+      "image_tips": "Check leaves for canker lesions, fruit for spots, branches for dieback.",
+      "diseases": {
+        "canker": {
+          "pathogen": "Xanthomonas citri pv. citri",
+          "type": "bacterial",
+          "affected_parts": ["leaf", "fruit", "stem"],
+          "symptoms": [
+            "Raised, corky, crater-like lesions on leaves",
+            "Lesions have oily, water-soaked margin",
+            "Similar lesions on fruit — reduce market value",
+            "Severe defoliation and fruit drop"
+          ],
+          "favorable_conditions": "Warm, wet, windy conditions, rain splash, wounds",
+          "organic_treatment": [
+            "Copper oxychloride (3g/L) spray — preventive",
+            "Windbreak planting to reduce spread",
+            "Remove and destroy infected leaves and fruits"
+          ],
+          "chemical_treatment": [
+            "Copper hydroxide 77% WP @ 3g/L",
+            "Streptocycline (0.5g/L) + Copper oxychloride (3g/L)",
+            "Copper Bordeaux (1%) spray"
+          ],
+          "prevention": [
+            "Use disease-free nursery plants",
+            "Copper spray before monsoon",
+            "Control leaf miner (creates entry wounds)",
+            "Windbreaks around orchards"
+          ],
+          "severity": "high",
+          "yield_loss": "20-60%"
+        },
+        "greening_huanglongbing": {
+          "pathogen": "Candidatus Liberibacter asiaticus (HLB)",
+          "type": "bacterial",
+          "affected_parts": ["leaf", "fruit", "whole_tree"],
+          "symptoms": [
+            "Asymmetric yellowing of leaves (blotchy mottle)",
+            "Small, lopsided, bitter-tasting fruit",
+            "Vein yellowing and corky veins",
+            "Tree decline over 2-3 years"
+          ],
+          "favorable_conditions": "Asian citrus psyllid vector, warm climate",
+          "organic_treatment": [
+            "Remove and destroy infected trees immediately",
+            "Control psyllid with neem oil (5ml/L)",
+            "Use certified disease-free nursery stock"
+          ],
+          "chemical_treatment": [
+            "Imidacloprid 17.8% SL @ 0.5ml/L — for psyllid",
+            "Thiamethoxam 25% WG @ 0.3g/L",
+            "Oxytetracycline trunk injection — research stage"
+          ],
+          "prevention": [
+            "Use certified disease-free nursery stock",
+            "Regular psyllid monitoring and control",
+            "Remove infected trees promptly",
+            "Control weeds that harbor psyllid"
+          ],
+          "severity": "very_high",
+          "yield_loss": "50-100% (eventual tree death)"
+        },
+        "scab": {
+          "pathogen": "Elsinoe fawcettii",
+          "type": "fungus",
+          "affected_parts": ["leaf", "fruit", "stem"],
+          "symptoms": [
+            "Raised, corky, wart-like lesions on fruit",
+            "Small, raised spots on leaves",
+            "Distorted and curled young leaves",
+            "Cosmetic damage — fruit downgraded"
+          ],
+          "favorable_conditions": "Warm, wet, humid conditions; young tissue susceptible",
+          "organic_treatment": [
+            "Copper spray (Bordeaux mixture) during flush",
+            "Remove and destroy infected fruit",
+            "Prune for air circulation"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Copper hydroxide 77% WP @ 3g/L",
+            "Benomyl 50% WP @ 1g/L"
+          ],
+          "prevention": [
+            "Spray during new flushes",
+            "Maintain canopy openness",
+            "Use resistant rootstocks where available"
+          ],
+          "severity": "low",
+          "yield_loss": "5-15%"
+        }
+      }
+    },
+    "banana": {
+      "hindi_name": "केला",
+      "scientific_name": "Musa spp.",
+      "image_tips": "Check pseudostem for wilting, leaves for spots and yellowing, bunch for rot.",
+      "diseases": {
+        "panama_wilt": {
+          "pathogen": "Fusarium oxysporum f. sp. cubense (TR4)",
+          "type": "fungus",
+          "affected_parts": ["whole_plant", "pseudostem", "root"],
+          "symptoms": [
+            "Yellowing of older leaves from margins inward",
+            "Permanent wilting — leaves hang down like a skirt",
+            "Vascular discoloration (red-brown) in pseudostem",
+            "Complete plant death within weeks"
+          ],
+          "favorable_conditions": "Warm (27-30°C), acidic, well-drained soil, contaminated soil",
+          "organic_treatment": [
+            "There is NO cure once plant is infected",
+            "Remove and destroy infected plants (do not compost)",
+            "Soil solarization before replanting",
+            "Add Trichoderma to soil as preventive"
+          ],
+          "chemical_treatment": [
+            "No effective chemical treatment available",
+            "Carbendazim soil drench may slow spread",
+            "Fosetyl-aluminum preventive root drench"
+          ],
+          "prevention": [
+            "Plant resistant varieties (Grand Naine, GCTCV-219)",
+            "Use tissue-culture plantlets",
+            "Do NOT replant banana in infected soil",
+            "Drench planting holes with Trichoderma"
+          ],
+          "severity": "very_high",
+          "yield_loss": "100% (plant death)"
+        },
+        "sigatoka_leaf_spot": {
+          "pathogen": "Mycosphaerella fijiensis (Black Sigatoka)",
+          "type": "fungus",
+          "affected_parts": ["leaf"],
+          "symptoms": [
+            "Dark brown to black streaks on leaf veins",
+            "Spots expand into large necrotic areas",
+            "Premature leaf drying — reduces photosynthesis",
+            "Severe defoliation affects bunch filling"
+          ],
+          "favorable_conditions": "Warm (25-30°C), high humidity, frequent rain",
+          "organic_treatment": [
+            "Remove and destroy infected leaves",
+            "Balanced potassium nutrition",
+            "Neem oil spray (5ml/L)"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L — every 2 weeks",
+            "Chlorothalonil 75% WP @ 2g/L",
+            "Propiconazole 25% EC @ 1ml/L"
+          ],
+          "prevention": [
+            "Remove diseased leaves regularly",
+            "Maintain good potassium levels",
+            "Spray preventively during wet season",
+            "Proper spacing for air circulation"
+          ],
+          "severity": "high",
+          "yield_loss": "20-50%"
+        },
+        "bunchy_top": {
+          "pathogen": "Banana bunchy top virus (BBTV) — aphid transmitted",
+          "type": "viral",
+          "affected_parts": ["leaf", "whole_plant"],
+          "symptoms": [
+            "Narrow, upright, bunched leaves at top",
+            "Leaves have chlorotic margins and dark green streaks",
+            "Stunted growth — no bunch formation",
+            "Plants eventually stop producing fruit"
+          ],
+          "favorable_conditions": "Banana aphid (Pentalonia nigronervosa) vector",
+          "organic_treatment": [
+            "Remove and destroy infected plants immediately",
+            "Control aphids with neem oil (5ml/L)",
+            "Use virus-free tissue culture plants"
+          ],
+          "chemical_treatment": [
+            "Imidacloprid 17.8% SL @ 0.5ml/L — for aphid",
+            "Thiamethoxam 25% WG @ 0.3g/L",
+            "Dimethoate 30% EC @ 2ml/L"
+          ],
+          "prevention": [
+            "Use certified disease-free suckers/tissue culture",
+            "Control aphid vector",
+            "Remove and destroy infected plants immediately",
+            " quarantine new planting material"
+          ],
+          "severity": "very_high",
+          "yield_loss": "100% (no fruit production)"
+        }
+      }
+    },
+    "chilli": {
+      "hindi_name": "मिर्च",
+      "scientific_name": "Capsicum annuum",
+      "image_tips": "Check leaves for leaf curl, fruits for rot and spots, stems for wilting.",
+      "diseases": {
+        "leaf_curl": {
+          "pathogen": "Chilli leaf curl virus (ChiLCV) — Whitefly transmitted",
+          "type": "viral",
+          "affected_parts": ["leaf", "whole_plant"],
+          "symptoms": [
+            "Upward curling and cupping of leaves",
+            "Thickened, leathery leaves",
+            "Reduced leaf size — bushy appearance",
+            "Severe stunting and reduced fruiting"
+          ],
+          "favorable_conditions": "Whitefly infestation, hot dry weather",
+          "organic_treatment": [
+            "Yellow sticky traps for whitefly",
+            "Neem oil (5ml/L) spray",
+            "Remove and destroy infected plants"
+          ],
+          "chemical_treatment": [
+            "Imidacloprid 17.8% SL @ 0.5ml/L",
+            "Thiamethoxam 25% WG @ 0.3g/L",
+            "Diafenthiuron 50% WP @ 1.2g/L"
+          ],
+          "prevention": [
+            "Use resistant/tolerant varieties",
+            "Control whitefly early",
+            "Use insect-proof net for nursery",
+            "Manage weeds nearby"
+          ],
+          "severity": "high",
+          "yield_loss": "30-80%"
+        },
+        "dieback_fruit_rot": {
+          "pathogen": "Colletotrichum capsici",
+          "type": "fungus",
+          "affected_parts": ["fruit", "stem"],
+          "symptoms": [
+            "Dark, sunken lesions on chilli fruits",
+            "Fruit drying on plant — stem-end rot",
+            "Dark cankers on stems causing dieback",
+            "Infected fruits hang on plant, dry and shriveled"
+          ],
+          "favorable_conditions": "Warm (25-30°C), humid, rain splash",
+          "organic_treatment": [
+            "Bordeaux mixture (1%) spray",
+            "Neem oil (5ml/L) spray",
+            "Remove and destroy infected fruits"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Carbendazim 50% WP @ 1g/L",
+            "Copper oxychloride 50% WP @ 3g/L"
+          ],
+          "prevention": [
+            "Crop rotation",
+            "Balanced nutrition — avoid excess nitrogen",
+            "Harvest at proper stage",
+            "Avoid overhead irrigation"
+          ],
+          "severity": "high",
+          "yield_loss": "20-60%"
+        },
+        "phytophthora_blight": {
+          "pathogen": "Phytophthora capsici",
+          "type": "oomycete",
+          "affected_parts": ["fruit", "stem", "root"],
+          "symptoms": [
+            "Water-soaked lesions on stems at soil line",
+            "Fruit shows soft, watery rot — white moldy growth",
+            "Sudden wilting and death of whole plant",
+            "Root rot — brown, water-soaked roots"
+          ],
+          "favorable_conditions": "Warm (25-30°C), waterlogged soil, high rainfall",
+          "organic_treatment": [
+            "Raise beds for drainage",
+            "Remove and destroy infected plants immediately",
+            "Trichoderma soil application"
+          ],
+          "chemical_treatment": [
+            "Metalaxyl 8% WP @ 5g/L — soil drench",
+            "Fosetyl-aluminum 80% WP @ 3g/L",
+            "Dimethomorph 50% WP @ 2g/L"
+          ],
+          "prevention": [
+            "Ensure excellent drainage",
+            "Crop rotation (non-solanaceous)",
+            "Raised bed cultivation",
+            "Avoid overhead irrigation"
+          ],
+          "severity": "very_high",
+          "yield_loss": "50-100%"
+        }
+      }
+    },
+    "cotton": {
+      "hindi_name": "कपास",
+      "scientific_name": "Gossypium spp.",
+      "image_tips": "Check leaves for spots, bolls for rot, stems for wilting.",
+      "diseases": {
+        "boll_rot": {
+          "pathogen": "Mixed complex — Alternaria, Fusarium, Rhizoctonia",
+          "type": "fungus",
+          "affected_parts": ["boll", "flower"],
+          "symptoms": [
+            "Soft rot of bolls — bolls turn brown and burst",
+            "Fungal growth on boll surface",
+            "Premature boll opening and fiber staining",
+            "Reduced lint quality and yield"
+          ],
+          "favorable_conditions": "High humidity, rain, warm temperature, dense canopy",
+          "organic_treatment": [
+            "Maintain plant vigor with balanced nutrition",
+            "Remove and destroy infected bolls",
+            "Improve air circulation through pruning"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Copper oxychloride 50% WP @ 3g/L",
+            "Carbendazim 50% WP @ 1g/L"
+          ],
+          "prevention": [
+            "Balanced irrigation — avoid waterlogging",
+            "Maintain plant spacing",
+            "Balanced nutrition — avoid excess nitrogen",
+            "Timely harvest"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-30%"
+        },
+        "fusarium_wilt": {
+          "pathogen": "Fusarium oxysporum f. sp. vasinfectum",
+          "type": "fungus",
+          "affected_parts": ["whole_plant", "stem", "root"],
+          "symptoms": [
+            "Yellowing and wilting of lower leaves first",
+            "Vascular browning in stem cross-section",
+            "Progressive wilting leading to plant death",
+            "Internal stem discoloration — reddish brown"
+          ],
+          "favorable_conditions": "Warm (28-30°C), alkaline soil, nematode damage",
+          "organic_treatment": [
+            "Trichoderma soil application (4g/kg seed)",
+            "Pseudomonas fluorescens soil drench",
+            "Soil solarization in summer"
+          ],
+          "chemical_treatment": [
+            "Carbendazim 50% WP seed treatment @ 2g/kg",
+            "Fosetyl-aluminum 80% WP @ 3g/L",
+            "Thiophanate methyl 70% WP @ 1g/L"
+          ],
+          "prevention": [
+            "Use resistant varieties",
+            "Crop rotation (3+ years)",
+            "Control root-knot nematode",
+            "Avoid alkaline soils"
+          ],
+          "severity": "high",
+          "yield_loss": "20-50%"
+        }
+      }
+    },
+    "soybean": {
+      "hindi_name": "सोयाबीन",
+      "scientific_name": "Glycine max",
+      "image_tips": "Check leaves for fungal growth, pods for spots, stems for wilting.",
+      "diseases": {
+        "rust": {
+          "pathogen": "Phakopsora pachyrhizi",
+          "type": "fungus",
+          "affected_parts": ["leaf"],
+          "symptoms": [
+            "Small, tan to reddish-brown raised pustules on leaves",
+            "Pustules mostly on lower leaf surface",
+            "Premature defoliation",
+            "Reduced seed size and oil content"
+          ],
+          "favorable_conditions": "Warm (22-28°C), high humidity, prolonged leaf wetness",
+          "organic_treatment": [
+            "Remove crop debris after harvest",
+            "Balanced fertilization",
+            "Early sowing to escape peak rust period"
+          ],
+          "chemical_treatment": [
+            "Propiconazole 25% EC @ 1ml/L",
+            "Tebuconazole 25.9% EC @ 1ml/L",
+            "Mancozeb 75% WP @ 2.5g/L"
+          ],
+          "prevention": [
+            "Use resistant varieties (JS-9560, JS-335)",
+            "Timely sowing",
+            "Monitor fields during humid weather",
+            "Early detection and spraying"
+          ],
+          "severity": "high",
+          "yield_loss": "15-60%"
+        },
+        "yellow_mosaic": {
+          "pathogen": "Soybean mosaic virus (SMV) — aphid transmitted",
+          "type": "viral",
+          "affected_parts": ["leaf", "whole_plant"],
+          "symptoms": [
+            "Mosaic pattern — light and dark green mottling on leaves",
+            "Leaf distortion and rugosity",
+            "Stunting of infected plants",
+            "Reduced seed set and pod filling"
+          ],
+          "favorable_conditions": "Aphid vector, warm weather",
+          "organic_treatment": [
+            "Remove and destroy infected plants",
+            "Control aphids with neem oil (5ml/L)",
+            "Use virus-free seed"
+          ],
+          "chemical_treatment": [
+            "Imidacloprid 17.8% SL @ 0.5ml/L — for aphid",
+            "Dimethoate 30% EC @ 2ml/L",
+            "Thiamethoxam 25% WG @ 0.3g/L"
+          ],
+          "prevention": [
+            "Use resistant varieties",
+            "Treat seed with Thiamethoxam",
+            "Control aphid vector early",
+            "Remove volunteer plants"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-40%"
+        }
+      }
+    },
+    "groundnut": {
+      "hindi_name": "मूंगफली",
+      "scientific_name": "Arachis hypogaea",
+      "image_tips": "Check leaves for rust pustules, pegs and pods for rot, roots for nodulation.",
+      "diseases": {
+        "rust": {
+          "pathogen": "Puccinia arachidis",
+          "type": "fungus",
+          "affected_parts": ["leaf"],
+          "symptoms": [
+            "Small, circular, reddish-brown raised pustules on lower leaf surface",
+            "Yellow halo around pustules",
+            "Premature defoliation",
+            "Reduced pod filling and yield"
+          ],
+          "favorable_conditions": "Warm (24-28°C), high humidity, prolonged dew/rain",
+          "organic_treatment": [
+            "Balanced fertilization",
+            "Sulfur application (25 kg/ha)",
+            "Remove crop debris"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Propiconazole 25% EC @ 1ml/L",
+            "Sulphur 80% WP @ 3g/L"
+          ],
+          "prevention": [
+            "Use resistant/tolerant varieties",
+            "Timely sowing",
+            "Crop rotation with non-host crops",
+            "Balanced nutrition"
+          ],
+          "severity": "high",
+          "yield_loss": "10-50%"
+        },
+        "early_leaf_spot": {
+          "pathogen": "Cercospora arachidicola",
+          "type": "fungus",
+          "affected_parts": ["leaf"],
+          "symptoms": [
+            "Circular, dark brown spots on upper leaf surface",
+            "Spots have light brown to gray centers",
+            "Yellow halo around spots",
+            "Premature leaf drop in severe cases"
+          ],
+          "favorable_conditions": "Warm (25-30°C), humid, dew, rain splash",
+          "organic_treatment": [
+            "Balanced nutrition — avoid excess nitrogen",
+            "Remove fallen leaves",
+            "Bordeaux mixture spray"
+          ],
+          "chemical_treatment": [
+            "Chlorothalonil 75% WP @ 2g/L",
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Carbendazim 50% WP @ 1g/L"
+          ],
+          "prevention": [
+            "Crop rotation",
+            "Balanced fertilization",
+            "Early sowing",
+            "Avoid dense planting"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-30%"
+        }
+      }
+    },
+    "sugarcane": {
+      "hindi_name": "गन्ना",
+      "scientific_name": "Saccharum officinarum",
+      "image_tips": "Check leaves for red rot lesion, stalks for internal rot, leaves for smut.",
+      "diseases": {
+        "red_rot": {
+          "pathogen": "Colletotrichum falcatum",
+          "type": "fungus",
+          "affected_parts": ["stalk"],
+          "symptoms": [
+            "Reddish discoloration of internal stalk tissue",
+            "White patches within red area (internally)",
+            "Dried top with withered leaves",
+            "Bitter taste of juice — reduced sugar recovery"
+          ],
+          "favorable_conditions": "Warm (25-30°C), wet conditions, wounds from borers/crushing",
+          "organic_treatment": [
+            "Use disease-free setts",
+            "Treat setts with Trichoderma (10g/L) — soak 30 min",
+            "Remove and destroy infected stools"
+          ],
+          "chemical_treatment": [
+            "Carbendazim 50% WP @ 2g/L — sett treatment",
+            "Mancozeb 75% WP @ 2.5g/L — sett dipping",
+            "Fosetyl-aluminum 80% WP @ 3g/L"
+          ],
+          "prevention": [
+            "Use resistant varieties (Co-86032, Co-99004)",
+            "Sett treatment with fungicide",
+            "Control borers that create entry wounds",
+            "Remove infected stools"
+          ],
+          "severity": "high",
+          "yield_loss": "15-40%"
+        },
+        "smut": {
+          "pathogen": "Sporisorium scitamineum",
+          "type": "fungus",
+          "affected_parts": ["shoot"],
+          "symptoms": [
+            "Black, whip-like structure emerging from shoot apex",
+            "The black whip (sorus) is covered with black spore powder",
+            "Affected shoots become stunted",
+            "Shoots may produce secondary whips"
+          ],
+          "favorable_conditions": "Warm (25-30°C), high humidity, mechanical wounds",
+          "organic_treatment": [
+            "Remove and destroy whips before they open",
+            "Use resistant/tolerant varieties",
+            "Treat setts with hot water (52°C for 30 min)"
+          ],
+          "chemical_treatment": [
+            "Carbendazim 50% WP — sett dipping",
+            "Mancozeb 75% WP — sett treatment",
+            "Tricyclazole 75% WP — foliar spray"
+          ],
+          "prevention": [
+            "Use resistant varieties",
+            "Sett selection — remove smut-infected setts",
+            "Hot water treatment of setts",
+            "Timely harvesting"
+          ],
+          "severity": "medium",
+          "yield_loss": "5-20%"
+        }
+      }
+    },
+    "cucumber": {
+      "hindi_name": "खीरा",
+      "scientific_name": "Cucumis sativus",
+      "image_tips": "Check leaves for downy mildew, fruits for rot and spots.",
+      "diseases": {
+        "downy_mildew": {
+          "pathogen": "Pseudoperonospora cubensis",
+          "type": "oomycete",
+          "affected_parts": ["leaf"],
+          "symptoms": [
+            "Angular, yellow patches on upper leaf surface",
+            "Purple-gray fuzzy growth on leaf undersides",
+            "Leaves eventually turn brown and crispy",
+            "Severe defoliation reduces fruit yield"
+          ],
+          "favorable_conditions": "Cool to warm (15-22°C), high humidity, rain/dew",
+          "organic_treatment": [
+            "Bordeaux mixture (1%) spray — preventive",
+            "Baking soda (5g/L) spray",
+            "Remove and destroy infected leaves"
+          ],
+          "chemical_treatment": [
+            "Metalaxyl 8% WP @ 5g/L",
+            "Chlorothalonil 75% WP @ 2g/L",
+            "Fosetyl-aluminum 80% WP @ 3g/L"
+          ],
+          "prevention": [
+            "Spray preventively before monsoon",
+            "Ensure good air circulation",
+            "Avoid overhead irrigation",
+            "Use resistant varieties where available"
+          ],
+          "severity": "high",
+          "yield_loss": "20-60%"
+        }
+      }
+    },
+    "brinjal": {
+      "hindi_name": "बैंगन",
+      "scientific_name": "Solanum melongena",
+      "image_tips": "Check leaves for spots and wilting, fruits for borer damage and rot.",
+      "diseases": {
+        "little_leaf": {
+          "pathogen": "Phytoplasma — transmitted by leafhopper (Hishimonus phycitis)",
+          "type": "phytoplasma",
+          "affected_parts": ["leaf", "whole_plant"],
+          "symptoms": [
+            "Severely reduced leaf size — tiny, narrow leaves",
+            "Leaves become yellow-green and upright",
+            "Profuse branching giving witches' broom appearance",
+            "No fruit formation — plant becomes sterile"
+          ],
+          "favorable_conditions": "Leafhopper vector, warm conditions",
+          "organic_treatment": [
+            "Remove and destroy infected plants immediately",
+            "Control leafhopper with neem oil (5ml/L)",
+            "Use resistant varieties (Pusa Brinjal series)"
+          ],
+          "chemical_treatment": [
+            "Imidacloprid 17.8% SL @ 0.5ml/L — for leafhopper",
+            "Dimethoate 30% EC @ 2ml/L",
+            "Oxytetracycline (0.5g/L) trunk injection — research stage"
+          ],
+          "prevention": [
+            "Use resistant varieties",
+            "Control leafhopper vector early",
+            "Remove infected plants immediately",
+            "Remove weeds that harbor vector"
+          ],
+          "severity": "high",
+          "yield_loss": "50-100%"
+        },
+        "fruit_rot": {
+          "pathogen": "Phomopsis vexans",
+          "type": "fungus",
+          "affected_parts": ["fruit", "leaf"],
+          "symptoms": [
+            "Circular, sunken, brown lesions on fruit",
+            "Concentric rings visible in older lesions",
+            "Small brown spots on leaves with yellow halo",
+            "Fruit rot leads to total loss"
+          ],
+          "favorable_conditions": "Warm (25-30°C), wet/humid conditions",
+          "organic_treatment": [
+            "Bordeaux mixture (1%) spray",
+            "Remove and destroy infected fruits",
+            "Neem oil (5ml/L) spray"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Carbendazim 50% WP @ 1g/L",
+            "Chlorothalonil 75% WP @ 2g/L"
+          ],
+          "prevention": [
+            "Crop rotation",
+            "Use healthy seeds",
+            "Spray during warm, wet weather",
+            "Remove plant debris after harvest"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-30%"
+        }
+      }
+    },
+    "onion": {
+      "hindi_name": "प्याज",
+      "scientific_name": "Allium cepa",
+      "image_tips": "Check leaves for purple blotch, neck for rot, bulbs for basal rot.",
+      "diseases": {
+        "purple_blotch": {
+          "pathogen": "Alternaria porri",
+          "type": "fungus",
+          "affected_parts": ["leaf", "neck"],
+          "symptoms": [
+            "Purple, elongated, sunken lesions on leaves",
+            "Concentric rings visible in lesions",
+            "Tips of leaves turn yellow and die back",
+            "Neck rot in stored bulbs"
+          ],
+          "favorable_conditions": "Warm (25-30°C), high humidity, rain splash",
+          "organic_treatment": [
+            "Neem oil (5ml/L) spray",
+            "Copper-based spray (Bordeaux mixture)",
+            "Balanced fertilization — avoid excess nitrogen"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Chlorothalonil 75% WP @ 2g/L",
+            "Azoxystrobin 23% SC @ 1.5ml/L"
+          ],
+          "prevention": [
+            "Crop rotation (2+ years)",
+            "Balanced nitrogen nutrition",
+            "Avoid overhead irrigation",
+            "Proper curing of bulbs before storage"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-30%"
+        },
+        "downy_mildew": {
+          "pathogen": "Peronospora destructor",
+          "type": "oomycete",
+          "affected_parts": ["leaf", "neck"],
+          "symptoms": [
+            "Pale green to yellow patches on leaves",
+            "Violet-gray fuzzy growth on leaf tips in humid weather",
+            "Leaves become soft and collapse",
+            "Flower stalks become bent and distorted"
+          ],
+          "favorable_conditions": "Cool (10-15°C), high humidity, dew, fog",
+          "organic_treatment": [
+            "Bordeaux mixture (1%) spray — preventive",
+            "Ensure good air circulation",
+            "Remove and destroy infected plants"
+          ],
+          "chemical_treatment": [
+            "Metalaxyl 8% WP @ 5g/L",
+            "Fosetyl-aluminum 80% WP @ 3g/L",
+            "Chlorothalonil 75% WP @ 2g/L"
+          ],
+          "prevention": [
+            "Use resistant/tolerant varieties",
+            "Proper spacing for airflow",
+            "Spray preventively during cool, humid weather",
+            "Avoid overhead irrigation"
+          ],
+          "severity": "high",
+          "yield_loss": "15-50%"
+        }
+      }
+    },
+    "okra": {
+      "hindi_name": "भिंडी / ओकरा",
+      "scientific_name": "Abelmoschus esculentus",
+      "image_tips": "Check leaves for mosaic, pods for yellow vein mosaic virus.",
+      "diseases": {
+        "yellow_mosaic_virus": {
+          "pathogen": "Okra yellow mosaic virus — Whitefly transmitted",
+          "type": "viral",
+          "affected_parts": ["leaf", "fruit"],
+          "symptoms": [
+            "Bright yellow mosaic patches on leaves",
+            "Leaf distortion and stunting",
+            "Fruits may be distorted and small",
+            "Severe infection causes complete yellowing"
+          ],
+          "favorable_conditions": "Whitefly vector, hot dry conditions",
+          "organic_treatment": [
+            "Yellow sticky traps for whitefly",
+            "Neem oil (5ml/L) spray",
+            "Remove and destroy infected plants"
+          ],
+          "chemical_treatment": [
+            "Imidacloprid 17.8% SL @ 0.5ml/L",
+            "Thiamethoxam 25% WG @ 0.3g/L",
+            "Diafenthiuron 50% WP @ 1.2g/L"
+          ],
+          "prevention": [
+            "Use resistant varieties (Pusa A-4, Arka Anamika)",
+            "Control whitefly early",
+            "Use insect-proof net for nursery",
+            "Remove weed hosts"
+          ],
+          "severity": "high",
+          "yield_loss": "30-80%"
+        }
+      }
+    },
+    "watermelon": {
+      "hindi_name": "तरबूज",
+      "scientific_name": "Citrullus lanatus",
+      "image_tips": "Check leaves for wilt and mildew, fruits for rot and cracking.",
+      "diseases": {
+        "fusarium_wilt": {
+          "pathogen": "Fusarium oxysporum f. sp. niveum",
+          "type": "fungus",
+          "affected_parts": ["whole_plant", "stem", "root"],
+          "symptoms": [
+            "Yellowing and wilting of one side of vine",
+            "Vascular browning in stem",
+            "Progressive wilting leading to plant death",
+            "Root system may be brown and decayed"
+          ],
+          "favorable_conditions": "Warm (25-30°C), acidic soil, waterlogged conditions",
+          "organic_treatment": [
+            "Graft onto resistant rootstock (Cucurbita rootstock)",
+            "Trichoderma soil application",
+            "Soil solarization before planting"
+          ],
+          "chemical_treatment": [
+            "Carbendazim 50% WP — soil drench",
+            "Fosetyl-aluminum 80% WP @ 3g/L",
+            "Metalaxyl 8% WP @ 5g/L"
+          ],
+          "prevention": [
+            "Graft onto resistant rootstock",
+            "Crop rotation (5+ years with non-cucurbit)",
+            "Soil solarization",
+            "Use raised beds for drainage"
+          ],
+          "severity": "very_high",
+          "yield_loss": "30-100%"
+        }
+      }
+    },
+    "pomegranate": {
+      "hindi_name": "अनार",
+      "scientific_name": "Punica granatum",
+      "image_tips": "Check fruits for bacterial blight spots, leaves for wilting.",
+      "diseases": {
+        "bacterial_blight": {
+          "pathogen": "Xanthomonas axonopodis pv. punicae",
+          "type": "bacterial",
+          "affected_parts": ["leaf", "fruit", "stem"],
+          "symptoms": [
+            "Small, water-soaked spots on leaves — turn brown",
+            "Circular, brown, sunken lesions on fruit",
+            "Fruit cracking and oozing",
+            "Twig dieback and canker"
+          ],
+          "favorable_conditions": "Warm, wet, rainy conditions; rain splash; wounds",
+          "organic_treatment": [
+            "Copper oxychloride (3g/L) spray",
+            "Remove and destroy infected plant parts",
+            "Prune for air circulation"
+          ],
+          "chemical_treatment": [
+            "Copper hydroxide 77% WP @ 3g/L",
+            "Streptocycline (0.5g/L) spray",
+            "Bordeaux mixture (1%) spray"
+          ],
+          "prevention": [
+            "Copper spray before monsoon",
+            "Avoid overhead irrigation",
+            "Prune in dry weather",
+            "Use disease-free nursery plants"
+          ],
+          "severity": "high",
+          "yield_loss": "20-60%"
+        }
+      }
+    },
+    "papaya": {
+      "hindi_name": "पपीता",
+      "scientific_name": "Carica papaya",
+      "image_tips": "Check fruits for ringspot virus spots, leaves for yellowing, trunk for wilting.",
+      "diseases": {
+        "ring_spot_virus": {
+          "pathogen": "Papaya ringspot virus (PRSV) — aphid transmitted",
+          "type": "viral",
+          "affected_parts": ["leaf", "fruit", "whole_plant"],
+          "symptoms": [
+            "Chlorotic (yellow) mosaic and ring spots on fruits",
+            "Leaf mosaic pattern — light and dark green mottling",
+            "Stunted growth and reduced fruit size",
+            "Leaf distortion — narrow, shoestring-like leaves"
+          ],
+          "favorable_conditions": "Aphid vector, warm conditions, proximity to infected plants",
+          "organic_treatment": [
+            "Remove and destroy infected plants immediately",
+            "Control aphids with neem oil (5ml/L)",
+            "Use reflective mulch to repel aphids"
+          ],
+          "chemical_treatment": [
+            "Imidacloprid 17.8% SL @ 0.5ml/L — for aphid",
+            "Dimethoate 30% EC @ 2ml/L",
+            "Thiamethoxam 25% WG @ 0.3g/L"
+          ],
+          "prevention": [
+            "Use resistant/tolerant varieties",
+            "Plant papaya away from infected areas",
+            "Control aphid vector early",
+            "Roguing infected plants immediately"
+          ],
+          "severity": "very_high",
+          "yield_loss": "50-100%"
+        }
+      }
+    },
+    "coconut": {
+      "hindi_name": "नारियल",
+      "scientific_name": "Cocos nucifera",
+      "image_tips": "Check leaves for yellowing, inflorescence for beetle damage, nuts for rot.",
+      "diseases": {
+        "wilt": {
+          "pathogen": "Phytophthora palmivora",
+          "type": "oomycete",
+          "affected_parts": ["whole_palm", "inflorescence"],
+          "symptoms": [
+            "Yellowing and wilting of younger leaves",
+            "Inflorescence rot — button stage fruits drop",
+            "Splitting of nuts",
+            "Complete yellowing and death in 3-6 months"
+          ],
+          "favorable_conditions": "Warm, wet, waterlogged conditions",
+          "organic_treatment": [
+            "Drain waterlogged areas",
+            "Bordeaux mixture (1%) — soil drench around base",
+            "Remove and destroy infected palms"
+          ],
+          "chemical_treatment": [
+            "Metalaxyl 8% WP — soil drench",
+            "Fosetyl-aluminum 80% WP @ 3g/L — trunk injection",
+            "Mancozeb 75% WP — soil application"
+          ],
+          "prevention": [
+            "Ensure proper drainage",
+            "Avoid waterlogging around palm base",
+            "Balanced nutrition — adequate potassium",
+            "Remove fallen infected nuts"
+          ],
+          "severity": "high",
+          "yield_loss": "50-100% (palm death)"
+        }
+      }
+    },
+    "pea": {
+      "hindi_name": "मटर",
+      "scientific_name": "Pisum sativum",
+      "image_tips": "Check leaves for powdery white growth, pods for spots.",
+      "diseases": {
+        "powdery_mildew": {
+          "pathogen": "Erysiphe pisi",
+          "type": "fungus",
+          "affected_parts": ["leaf", "stem", "pod"],
+          "symptoms": [
+            "White powdery growth on upper leaf surface",
+            "Leaves turn yellow and may curl",
+            "Stunting and reduced pod formation",
+            "Premature leaf drop"
+          ],
+          "favorable_conditions": "Warm (20-25°C), high humidity, dry leaf surface",
+          "organic_treatment": [
+            "Sulfur dust (10 kg/ha)",
+            "Milk spray (20% solution)",
+            "Neem oil (5ml/L)"
+          ],
+          "chemical_treatment": [
+            "Sulphur 80% WP @ 3g/L",
+            "Tebuconazole 25.9% EC @ 1ml/L",
+            "Propiconazole 25% EC @ 1ml/L"
+          ],
+          "prevention": [
+            "Use resistant varieties",
+            "Timely sowing",
+            "Balanced nitrogen fertilization"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-40%"
+        }
+      }
+    },
+    "pigeon_pea": {
+      "hindi_name": "अरहर / तूर",
+      "scientific_name": "Cajanus cajan",
+      "image_tips": "Check leaves for wilt, pods for borers, branches for dieback.",
+      "diseases": {
+        "wilt": {
+          "pathogen": "Fusarium oxysporum f. sp. udum",
+          "type": "fungus",
+          "affected_parts": ["whole_plant", "stem", "root"],
+          "symptoms": [
+            "Yellowing and wilting of branches",
+            "Vascular browning in stem cross-section",
+            "Progressive branch dieback",
+            "Complete plant death"
+          ],
+          "favorable_conditions": "Warm, moist soil, acidic conditions",
+          "organic_treatment": [
+            "Trichoderma soil application (4g/kg seed)",
+            "Use resistant varieties",
+            "Crop rotation (3+ years)"
+          ],
+          "chemical_treatment": [
+            "Carbendazim 50% WP seed treatment @ 2g/kg",
+            "Thiophanate methyl 70% WP @ 1g/L"
+          ],
+          "prevention": [
+            "Use resistant varieties (ICPH 2671, ICP 8863)",
+            "Seed treatment with Trichoderma",
+            "Crop rotation",
+            "Soil solarization"
+          ],
+          "severity": "high",
+          "yield_loss": "20-60%"
+        }
+      }
+    },
+    "mustard": {
+      "hindi_name": "सरसों",
+      "scientific_name": "Brassica juncea",
+      "image_tips": "Check leaves for Alternaria spots, flowers for white rust.",
+      "diseases": {
+        "alternaria_blight": {
+          "pathogen": "Alternaria brassicae",
+          "type": "fungus",
+          "affected_parts": ["leaf", "pod"],
+          "symptoms": [
+            "Circular, brown spots with concentric rings on leaves",
+            "Spots coalesce causing large blighted areas",
+            "Pod infection causing shattering",
+            "Premature leaf drop and pod abortion"
+          ],
+          "favorable_conditions": "Warm (20-25°C), high humidity, rain, dew",
+          "organic_treatment": [
+            "Neem oil (5ml/L) spray",
+            "Balanced nutrition",
+            "Crop rotation"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Chlorothalonil 75% WP @ 2g/L",
+            "Carbendazim 50% WP @ 1g/L"
+          ],
+          "prevention": [
+            "Use resistant varieties",
+            "Crop rotation (2+ years with non-brassica)",
+            "Timely sowing — early sowing escapes peak disease",
+            "Balanced nutrition — avoid excess nitrogen"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-30%"
+        },
+        "white_rust": {
+          "pathogen": "Albugo candida",
+          "type": "oomycete",
+          "affected_parts": ["leaf", "stem", "flower"],
+          "symptoms": [
+            "White, blister-like pustules on lower leaf surface",
+            "Upper surface shows yellow-green patches",
+            "Stem and flower stalk distortion",
+            "Pod malformation — 'shepherd's crook' appearance"
+          ],
+          "favorable_conditions": "Cool (15-20°C), high humidity, prolonged leaf wetness",
+          "organic_treatment": [
+            "Remove and destroy infected plants",
+            "Bordeaux mixture (1%) spray",
+            "Balanced fertilization"
+          ],
+          "chemical_treatment": [
+            "Metalaxyl 8% WP @ 5g/L",
+            "Fosetyl-aluminum 80% WP @ 3g/L",
+            "Mancozeb 75% WP @ 2.5g/L"
+          ],
+          "prevention": [
+            "Use resistant varieties",
+            "Crop rotation",
+            "Avoid overhead irrigation",
+            "Remove alternate hosts (wild mustard)"
+          ],
+          "severity": "medium",
+          "yield_loss": "5-25%"
+        }
+      }
+    },
+    "sunflower": {
+      "hindi_name": "सूरजमुखी",
+      "scientific_name": "Helianthus annuus",
+      "image_tips": "Check head for Alternaria, leaves for mildew and rust.",
+      "diseases": {
+        "alternaria_head_rot": {
+          "pathogen": "Alternaria helianthi",
+          "type": "fungus",
+          "affected_parts": ["head", "leaf"],
+          "symptoms": [
+            "Dark brown to black spots on capitulum (head)",
+            "Spots may cover entire head — rot of seeds",
+            "Concentric rings visible in lesions",
+            "Leaf spots with yellow halo"
+          ],
+          "favorable_conditions": "Warm (25-30°C), high humidity, rain",
+          "organic_treatment": [
+            "Neem oil (5ml/L) spray",
+            "Balanced nutrition",
+            "Timely harvest"
+          ],
+          "chemical_treatment": [
+            "Mancozeb 75% WP @ 2.5g/L",
+            "Carbendazim 50% WP @ 1g/L",
+            "Chlorothalonil 75% WP @ 2g/L"
+          ],
+          "prevention": [
+            "Use resistant/tolerant hybrids",
+            "Crop rotation (2+ years)",
+            "Balanced nutrition",
+            "Timely sowing and harvest"
+          ],
+          "severity": "medium",
+          "yield_loss": "10-35%"
+        }
+      }
+    }
+  }
+}

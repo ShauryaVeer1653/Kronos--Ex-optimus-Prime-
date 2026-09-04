@@ -1,0 +1,18 @@
+# KRONOS Plant Disease Detection
+# ================================
+
+# Core
+flask>=3.0.0
+python-dotenv>=1.0.0
+werkzeug>=3.0.0
+
+# Image handling
+Pillow>=10.0.0
+
+# Gemini Vision API (primary analysis)
+google-genai>=1.0.0
+google-generativeai>=0.8.0
+
+# CNN Model (fallback analysis)
+tensorflow>=2.15.0
+numpy>=1.24.0

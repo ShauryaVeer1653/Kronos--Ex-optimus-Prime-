@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acoustic Compressed-Air Leakage Detection IoT System — Block Diagram</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #ffffff;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .diagram-container {
+    width: 100%;
+    max-width: 1800px;
+    overflow-x: auto;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<div class="diagram-container">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1780 820" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2.5" flood-color="#000" flood-opacity="0.10"/>
+    </filter>
+    <filter id="shadowSmall" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0.5" dy="1" stdDeviation="1.5" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3B6FA0"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3A8A6A"/>
+    </marker>
+    <marker id="arrowDark" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A5568"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6B5B95"/>
+    </marker>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- TITLE BAR -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="0" y="0" width="1780" height="62" rx="0" fill="#1A202C"/>
+  <text x="890" y="26" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700" letter-spacing="1.2">ACOUSTIC COMPRESSED-AIR LEAKAGE DETECTION IoT SYSTEM</text>
+  <text x="890" y="46" text-anchor="middle" fill="#A0AEC0" font-size="10.5" letter-spacing="0.8">Industrial Block Diagram — System Architecture Overview</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 1: SENSING LAYER -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(30, 85)">
+    <!-- Section header -->
+    <rect x="0" y="0" width="270" height="28" rx="4" fill="#C05621" opacity="0.9"/>
+    <text x="135" y="19" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" letter-spacing="0.8">1 · SENSING LAYER</text>
+
+    <!-- Block 1: Ultrasonic Sensor -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="42" width="270" height="80" rx="6" fill="#FFFAF0" stroke="#C05621" stroke-width="1.5"/>
+      <rect x="0" y="42" width="270" height="22" rx="6" fill="#ED8936" opacity="0.18"/>
+      <text x="135" y="58" text-anchor="middle" fill="#C05621" font-size="9" font-weight="700">A</text>
+      <text x="135" y="76" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Directional I2S MEMS</text>
+      <text x="135" y="76" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600" dy="0"></text>
+      <text x="135" y="90" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Ultrasonic Sensor</text>
+      <text x="135" y="108" text-anchor="middle" fill="#718096" font-size="8.5">20 kHz – 40 kHz Acoustic Jet Noise</text>
+    </g>
+
+    <!-- Block 2: Piezoelectric Transducer -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="138" width="270" height="80" rx="6" fill="#FFFAF0" stroke="#C05621" stroke-width="1.5"/>
+      <rect x="0" y="138" width="270" height="22" rx="6" fill="#ED8936" opacity="0.18"/>
+      <text x="135" y="154" text-anchor="middle" fill="#C05621" font-size="9" font-weight="700">B</text>
+      <text x="135" y="172" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Piezoelectric Contact</text>
+      <text x="135" y="186" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Vibration Transducer</text>
+      <text x="135" y="204" text-anchor="middle" fill="#718096" font-size="8.5">Structure-Borne Acoustic Wave</text>
+    </g>
+
+    <!-- Block 3: Pipe Mount -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="234" width="270" height="80" rx="6" fill="#FFFAF0" stroke="#C05621" stroke-width="1.5"/>
+      <rect x="0" y="234" width="270" height="22" rx="6" fill="#ED8936" opacity="0.18"/>
+      <text x="135" y="250" text-anchor="middle" fill="#C05621" font-size="9" font-weight="700">C</text>
+      <text x="135" y="268" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Magnetic Pipe Mount &amp;</text>
+      <text x="135" y="282" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Acoustic Horn Concentrator</text>
+      <text x="135" y="300" text-anchor="middle" fill="#718096" font-size="8.5">Passive Gain &amp; Signal Focusing</text>
+    </g>
+
+    <!-- Vertical connecting line -->
+    <line x1="135" y1="122" x2="135" y2="138" stroke="#C05621" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="135" y1="218" x2="135" y2="234" stroke="#C05621" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ARROW 1→2: Analog/Digital I2S & ADC -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g>
+    <line x1="308" y1="280" x2="352" y2="280" stroke="#3B6FA0" stroke-width="2" marker-end="url(#arrowBlue)"/>
+    <rect x="310" y="286" width="44" height="16" rx="2" fill="#EBF4FF"/>
+    <text x="332" y="297" text-anchor="middle" fill="#3B6FA0" font-size="6.5" font-weight="600">I2S/ADC</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 2: EDGE PROCESSING UNIT -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(365, 85)">
+    <rect x="0" y="0" width="290" height="28" rx="4" fill="#2B6CB0" opacity="0.9"/>
+    <text x="145" y="19" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" letter-spacing="0.8">2 · EDGE PROCESSING UNIT</text>
+
+    <!-- Outer container -->
+    <rect x="0" y="38" width="290" height="305" rx="6" fill="#EBF8FF" stroke="#2B6CB0" stroke-width="1.5"/>
+
+    <!-- MCU Sub-block -->
+    <g filter="url(#shadowSmall)">
+      <rect x="14" y="50" width="262" height="48" rx="5" fill="#FFFFFF" stroke="#4299E1" stroke-width="1"/>
+      <circle cx="30" cy="74" r="7" fill="#4299E1" opacity="0.15"/>
+      <text x="30" y="77" text-anchor="middle" fill="#2B6CB0" font-size="7" font-weight="800">MCU</text>
+      <text x="46" y="66" fill="#2D3748" font-size="10" font-weight="600">Industrial STM32 Microcontroller</text>
+      <text x="46" y="80" fill="#718096" font-size="8">Hardware FPU &amp; DSP Core</text>
+    </g>
+
+    <!-- FFT Sub-block -->
+    <g filter="url(#shadowSmall)">
+      <rect x="14" y="108" width="262" height="48" rx="5" fill="#FFFFFF" stroke="#4299E1" stroke-width="1"/>
+      <circle cx="30" cy="132" r="7" fill="#4299E1" opacity="0.15"/>
+      <text x="30" y="135" text-anchor="middle" fill="#2B6CB0" font-size="6.5" font-weight="800">FFT</text>
+      <text x="46" y="124" fill="#2D3748" font-size="10" font-weight="600">1024-Point FFT Spectral Engine</text>
+      <text x="46" y="138" fill="#718096" font-size="8">Bandpass Filter &gt; 18 kHz</text>
+    </g>
+
+    <!-- dB SPL Sub-block -->
+    <g filter="url(#shadowSmall)">
+      <rect x="14" y="166" width="262" height="48" rx="5" fill="#FFFFFF" stroke="#4299E1" stroke-width="1"/>
+      <circle cx="30" cy="190" r="7" fill="#4299E1" opacity="0.15"/>
+      <text x="30" y="193" text-anchor="middle" fill="#2B6CB0" font-size="7" font-weight="800">dB</text>
+      <text x="46" y="182" fill="#2D3748" font-size="10" font-weight="600">dB SPL &amp; Spatial Amplitude</text>
+      <text x="46" y="196" fill="#718096" font-size="8">Decay Calculator</text>
+    </g>
+
+    <!-- TinyML Sub-block -->
+    <g filter="url(#shadowSmall)">
+      <rect x="14" y="224" width="262" height="48" rx="5" fill="#FFFFFF" stroke="#4299E1" stroke-width="1"/>
+      <circle cx="30" cy="248" r="7" fill="#4299E1" opacity="0.15"/>
+      <text x="30" y="251" text-anchor="middle" fill="#2B6CB0" font-size="6" font-weight="800">AI</text>
+      <text x="46" y="240" fill="#2D3748" font-size="10" font-weight="600">TinyML Edge Inference</text>
+      <text x="46" y="254" fill="#718096" font-size="8">Leak vs. Ambient Machine Noise</text>
+    </g>
+
+    <!-- Internal flow arrows -->
+    <line x1="145" y1="98" x2="145" y2="108" stroke="#90CDF4" stroke-width="1" marker-end="url(#arrowBlue)"/>
+    <line x1="145" y1="156" x2="145" y2="166" stroke="#90CDF4" stroke-width="1" marker-end="url(#arrowBlue)"/>
+    <line x1="145" y1="214" x2="145" y2="224" stroke="#90CDF4" stroke-width="1" marker-end="url(#arrowBlue)"/>
+
+    <!-- Output label -->
+    <text x="145" y="292" text-anchor="middle" fill="#2B6CB0" font-size="7.5" font-weight="600">SPI / UART → Telemetry</text>
+    <text x="145" y="304" text-anchor="middle" fill="#4299E1" font-size="6.5">Classified Event Packet</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ARROW 2→3: SPI/UART -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g>
+    <line x1="663" y1="280" x2="707" y2="280" stroke="#3B6FA0" stroke-width="2" marker-end="url(#arrowBlue)"/>
+    <rect x="665" y="286" width="44" height="16" rx="2" fill="#EBF4FF"/>
+    <text x="687" y="297" text-anchor="middle" fill="#3B6FA0" font-size="6.5" font-weight="600">SPI/UART</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 3: TELEMETRY & GATEWAY -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(720, 85)">
+    <rect x="0" y="0" width="270" height="28" rx="4" fill="#6B5B95" opacity="0.9"/>
+    <text x="135" y="19" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" letter-spacing="0.8">3 · TELEMETRY &amp; GATEWAY</text>
+
+    <!-- Block 1: LoRaWAN Transceiver -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="42" width="270" height="90" rx="6" fill="#FAF5FF" stroke="#6B5B95" stroke-width="1.5"/>
+      <rect x="0" y="42" width="270" height="22" rx="6" fill="#9F7AEA" opacity="0.15"/>
+      <text x="135" y="58" text-anchor="middle" fill="#6B5B95" font-size="9" font-weight="700">A</text>
+      <text x="135" y="78" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">On-Node LoRaWAN</text>
+      <text x="135" y="92" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Transceiver</text>
+      <text x="135" y="110" text-anchor="middle" fill="#718096" font-size="8">Long-Range, Noise-Immune RF</text>
+      <text x="135" y="124" text-anchor="middle" fill="#9F7AEA" font-size="7">868 / 915 MHz ISM Band</text>
+    </g>
+
+    <!-- Block 2: Gateway -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="148" width="270" height="90" rx="6" fill="#FAF5FF" stroke="#6B5B95" stroke-width="1.5"/>
+      <rect x="0" y="148" width="270" height="22" rx="6" fill="#9F7AEA" opacity="0.15"/>
+      <text x="135" y="164" text-anchor="middle" fill="#6B5B95" font-size="9" font-weight="700">B</text>
+      <text x="135" y="184" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Industrial Multi-Channel</text>
+      <text x="135" y="198" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">LoRaWAN Gateway</text>
+      <text x="135" y="216" text-anchor="middle" fill="#718096" font-size="8">Modbus / MQTT Bridge</text>
+      <text x="135" y="230" text-anchor="middle" fill="#9F7AEA" font-size="7">Edge-to-Cloud Relay</text>
+    </g>
+
+    <!-- Internal arrow -->
+    <line x1="135" y1="132" x2="135" y2="148" stroke="#B794F4" stroke-width="1" marker-end="url(#arrowPurple)"/>
+
+    <!-- Output label -->
+    <text x="135" y="258" text-anchor="middle" fill="#6B5B95" font-size="7.5" font-weight="600">MQTT → Ethernet / Cellular</text>
+    <text x="135" y="270" text-anchor="middle" fill="#9F7AEA" font-size="6.5">Encrypted JSON Payload</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ARROW 3→4: MQTT -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g>
+    <line x1="998" y1="260" x2="1042" y2="260" stroke="#3A8A6A" stroke-width="2" marker-end="url(#arrowGreen)"/>
+    <rect x="996" y="266" width="50" height="16" rx="2" fill="#F0FFF4"/>
+    <text x="1021" y="277" text-anchor="middle" fill="#3A8A6A" font-size="6.5" font-weight="600">MQTT/TLS</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 4: BACKEND ANALYTICS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(1055, 85)">
+    <rect x="0" y="0" width="290" height="28" rx="4" fill="#276749" opacity="0.9"/>
+    <text x="145" y="19" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" letter-spacing="0.8">4 · BACKEND ANALYTICS ENGINE</text>
+
+    <!-- Block 1: Flask API & DB -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="42" width="290" height="72" rx="6" fill="#F0FFF4" stroke="#276749" stroke-width="1.5"/>
+      <rect x="0" y="42" width="290" height="22" rx="6" fill="#48BB78" opacity="0.15"/>
+      <text x="145" y="58" text-anchor="middle" fill="#276749" font-size="9" font-weight="700">A</text>
+      <text x="145" y="78" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Flask REST API &amp; Time-Series DB</text>
+      <text x="145" y="92" text-anchor="middle" fill="#718096" font-size="8">TimescaleDB · PostgreSQL Extension</text>
+      <text x="145" y="106" text-anchor="middle" fill="#48BB78" font-size="7">Event Ingestion &amp; Historical Store</text>
+    </g>
+
+    <!-- Block 2: Energy Loss -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="124" width="290" height="72" rx="6" fill="#F0FFF4" stroke="#276749" stroke-width="1.5"/>
+      <rect x="0" y="124" width="290" height="22" rx="6" fill="#48BB78" opacity="0.15"/>
+      <text x="145" y="140" text-anchor="middle" fill="#276749" font-size="9" font-weight="700">B</text>
+      <text x="145" y="160" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Analytical Energy Loss Engine</text>
+      <text x="145" y="174" text-anchor="middle" fill="#718096" font-size="8">Volumetric CFM · ISO 11011 Model</text>
+      <text x="145" y="188" text-anchor="middle" fill="#48BB78" font-size="7">Orifice Flow Rate Estimation</text>
+    </g>
+
+    <!-- Block 3: Financial Calculator -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="206" width="290" height="72" rx="6" fill="#F0FFF4" stroke="#276749" stroke-width="1.5"/>
+      <rect x="0" y="206" width="290" height="22" rx="6" fill="#48BB78" opacity="0.15"/>
+      <text x="145" y="222" text-anchor="middle" fill="#276749" font-size="9" font-weight="700">C</text>
+      <text x="145" y="242" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Real-Time Financial Loss Calculator</text>
+      <text x="145" y="256" text-anchor="middle" fill="#718096" font-size="8">₹ Rupee Waste / Hour · Industrial Tariff</text>
+      <text x="145" y="270" text-anchor="middle" fill="#48BB78" font-size="7">Annualized Cost Projection</text>
+    </g>
+
+    <!-- Internal arrows -->
+    <line x1="145" y1="114" x2="145" y2="124" stroke="#9AE6B4" stroke-width="1" marker-end="url(#arrowGreen)"/>
+    <line x1="145" y1="196" x2="145" y2="206" stroke="#9AE6B4" stroke-width="1" marker-end="url(#arrowGreen)"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ARROW 4→5: WebSocket / API -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g>
+    <line x1="1353" y1="250" x2="1397" y2="250" stroke="#3A8A6A" stroke-width="2" marker-end="url(#arrowGreen)"/>
+    <rect x="1351" y="256" width="50" height="16" rx="2" fill="#F0FFF4"/>
+    <text x="1376" y="267" text-anchor="middle" fill="#3A8A6A" font-size="6.5" font-weight="600">WSS/API</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 5: OPERATOR DASHBOARD -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(1410, 85)">
+    <rect x="0" y="0" width="340" height="28" rx="4" fill="#2C5282" opacity="0.85"/>
+    <text x="170" y="19" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" letter-spacing="0.8">5 · OPERATOR DASHBOARD &amp; ALERTS</text>
+
+    <!-- Block 1: Web Interface -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="42" width="340" height="72" rx="6" fill="#EBF8FF" stroke="#2C5282" stroke-width="1.5"/>
+      <rect x="0" y="42" width="340" height="22" rx="6" fill="#4299E1" opacity="0.15"/>
+      <text x="170" y="58" text-anchor="middle" fill="#2C5282" font-size="9" font-weight="700">A</text>
+      <text x="170" y="78" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Web Interface (React)</text>
+      <text x="170" y="92" text-anchor="middle" fill="#718096" font-size="8">Interactive Pipeline Map &amp; Spatial Pinpointing (±0.6 m)</text>
+      <text x="170" y="106" text-anchor="middle" fill="#4299E1" font-size="7">Real-Time Leak Localization Overlay</text>
+    </g>
+
+    <!-- Block 2: FFT Display -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="124" width="340" height="72" rx="6" fill="#EBF8FF" stroke="#2C5282" stroke-width="1.5"/>
+      <rect x="0" y="124" width="340" height="22" rx="6" fill="#4299E1" opacity="0.15"/>
+      <text x="170" y="140" text-anchor="middle" fill="#2C5282" font-size="9" font-weight="700">B</text>
+      <text x="170" y="160" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">FFT Waterfall Spectral Display</text>
+      <text x="170" y="174" text-anchor="middle" fill="#718096" font-size="8">Acoustic Frequency vs. Time Heatmap</text>
+      <text x="170" y="188" text-anchor="middle" fill="#4299E1" font-size="7">18 kHz – 40 kHz Ultrasonic Band</text>
+    </g>
+
+    <!-- Block 3: Alert Module -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="206" width="340" height="72" rx="6" fill="#EBF8FF" stroke="#2C5282" stroke-width="1.5"/>
+      <rect x="0" y="206" width="340" height="22" rx="6" fill="#4299E1" opacity="0.15"/>
+      <text x="170" y="222" text-anchor="middle" fill="#2C5282" font-size="9" font-weight="700">C</text>
+      <text x="170" y="242" text-anchor="middle" fill="#2D3748" font-size="10.5" font-weight="600">Automated Threshold Alerts</text>
+      <text x="170" y="256" text-anchor="middle" fill="#718096" font-size="8">SMS / Telegram / Maintenance Dispatch</text>
+      <text x="170" y="270" text-anchor="middle" fill="#4299E1" font-size="7">Escalation Policy &amp; SLA Tracking</text>
+    </g>
+
+    <!-- Internal arrows -->
+    <line x1="170" y1="114" x2="170" y2="124" stroke="#90CDF4" stroke-width="1" marker-end="url(#arrowBlue)"/>
+    <line x1="170" y1="196" x2="170" y2="206" stroke="#90CDF4" stroke-width="1" marker-end="url(#arrowBlue)"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MAIN HORIZONTAL DATA FLOW LINE -->
+  <!-- ═══════════════════════════════════════════ -->
+  <line x1="45" y1="440" x2="1735" y2="440" stroke="#CBD5E0" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="890" y="458" text-anchor="middle" fill="#A0AEC0" font-size="8" letter-spacing="1">END-TO-END SIGNAL &amp; TELEMETRY FLOW →</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- DETAILED VERTICAL SIGNAL FLOW ANNOTATIONS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- Sensing → Edge: data type label -->
+  <g transform="translate(255, 380)">
+    <rect x="0" y="0" width="80" height="38" rx="4" fill="#FFF5EB" stroke="#C05621" stroke-width="0.8" opacity="0.9"/>
+    <text x="40" y="14" text-anchor="middle" fill="#C05621" font-size="7" font-weight="700">ANALOG</text>
+    <text x="40" y="26" text-anchor="middle" fill="#C05621" font-size="7" font-weight="700">I2S / ADC</text>
+    <text x="40" y="35" text-anchor="middle" fill="#DD6B20" font-size="5.5">24-bit @ 192 kHz</text>
+    <polygon points="40,42 35,38 45,38" fill="#C05621"/>
+  </g>
+
+  <!-- Edge → Telemetry: packet type -->
+  <g transform="translate(600, 380)">
+    <rect x="0" y="0" width="80" height="38" rx="4" fill="#EBF8FF" stroke="#2B6CB0" stroke-width="0.8" opacity="0.9"/>
+    <text x="40" y="14" text-anchor="middle" fill="#2B6CB0" font-size="7" font-weight="700">CLASSIFIED</text>
+    <text x="40" y="26" text-anchor="middle" fill="#2B6CB0" font-size="7" font-weight="700">EVENT PKT</text>
+    <text x="40" y="35" text-anchor="middle" fill="#4299E1" font-size="5.5">SPI/UART 115200</text>
+    <polygon points="40,42 35,38 45,38" fill="#2B6CB0"/>
+  </g>
+
+  <!-- Telemetry → Backend: payload type -->
+  <g transform="translate(920, 380)">
+    <rect x="0" y="0" width="80" height="38" rx="4" fill="#FAF5FF" stroke="#6B5B95" stroke-width="0.8" opacity="0.9"/>
+    <text x="40" y="14" text-anchor="middle" fill="#6B5B95" font-size="7" font-weight="700">LoRaWAN</text>
+    <text x="40" y="26" text-anchor="middle" fill="#6B5B95" font-size="7" font-weight="700">JSON/UTF-8</text>
+    <text x="40" y="35" text-anchor="middle" fill="#9F7AEA" font-size="5.5">AES-128 Encrypted</text>
+    <polygon points="40,42 35,38 45,38" fill="#6B5B95"/>
+  </g>
+
+  <!-- Backend → Dashboard: API type -->
+  <g transform="translate(1290, 380)">
+    <rect x="0" y="0" width="80" height="38" rx="4" fill="#F0FFF4" stroke="#276749" stroke-width="0.8" opacity="0.9"/>
+    <text x="40" y="14" text-anchor="middle" fill="#276749" font-size="7" font-weight="700">MQTT / WSS</text>
+    <text x="40" y="26" text-anchor="middle" fill="#276749" font-size="7" font-weight="700">REST API</text>
+    <text x="40" y="35" text-anchor="middle" fill="#48BB78" font-size="5.5">TLS 1.3 / JWT Auth</text>
+    <polygon points="40,42 35,38 45,38" fill="#276749"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PROTOCOL / TECHNOLOGY STRIP -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(30, 470)">
+    <rect x="0" y="0" width="1720" height="44" rx="5" fill="#F7FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="20" y="16" fill="#4A5568" font-size="8" font-weight="700" letter-spacing="0.5">TECHNOLOGY STACK</text>
+
+    <!-- Sensing -->
+    <rect x="180" y="6" width="120" height="30" rx="3" fill="#FFF5EB" stroke="#ED8936" stroke-width="0.8"/>
+    <text x="240" y="18" text-anchor="middle" fill="#C05621" font-size="7" font-weight="600">INMP441 / ICS-43434</text>
+    <text x="240" y="30" text-anchor="middle" fill="#DD6B20" font-size="6">I2S MEMS Microphone</text>
+
+    <!-- Arrow -->
+    <line x1="305" y1="21" x2="325" y2="21" stroke="#CBD5E0" stroke-width="1" marker-end="url(#arrowDark)"/>
+
+    <!-- Edge -->
+    <rect x="330" y="6" width="120" height="30" rx="3" fill="#EBF8FF" stroke="#4299E1" stroke-width="0.8"/>
+    <text x="390" y="18" text-anchor="middle" fill="#2B6CB0" font-size="7" font-weight="600">STM32F4 / H7</text>
+    <text x="390" y="30" text-anchor="middle" fill="#4299E1" font-size="6">ARM Cortex-M4F</text>
+
+    <line x1="455" y1="21" x2="475" y2="21" stroke="#CBD5E0" stroke-width="1" marker-end="url(#arrowDark)"/>
+
+    <!-- Radio -->
+    <rect x="480" y="6" width="120" height="30" rx="3" fill="#FAF5FF" stroke="#9F7AEA" stroke-width="0.8"/>
+    <text x="540" y="18" text-anchor="middle" fill="#6B5B95" font-size="7" font-weight="600">SX1276 / SX1262</text>
+    <text x="540" y="30" text-anchor="middle" fill="#9F7AEA" font-size="6">LoRa Radio Module</text>
+
+    <line x1="605" y1="21" x2="625" y2="21" stroke="#CBD5E0" stroke-width="1" marker-end="url(#arrowDark)"/>
+
+    <!-- Gateway -->
+    <rect x="630" y="6" width="120" height="30" rx="3" fill="#FAF5FF" stroke="#B794F4" stroke-width="0.8"/>
+    <text x="690" y="18" text-anchor="middle" fill="#6B5B95" font-size="7" font-weight="600">Kerlink / RAK</text>
+    <text x="690" y="30" text-anchor="middle" fill="#9F7AEA" font-size="6">LoRaWAN Gateway</text>
+
+    <line x1="755" y1="21" x2="775" y2="21" stroke="#CBD5E0" stroke-width="1" marker-end="url(#arrowDark)"/>
+
+    <!-- Backend -->
+    <rect x="780" y="6" width="140" height="30" rx="3" fill="#F0FFF4" stroke="#48BB78" stroke-width="0.8"/>
+    <text x="850" y="18" text-anchor="middle" fill="#276749" font-size="7" font-weight="600">Flask + TimescaleDB</text>
+    <text x="850" y="30" text-anchor="middle" fill="#48BB78" font-size="6">PostgreSQL / Redis</text>
+
+    <line x1="925" y1="21" x2="945" y2="21" stroke="#CBD5E0" stroke-width="1" marker-end="url(#arrowDark)"/>
+
+    <!-- Frontend -->
+    <rect x="950" y="6" width="120" height="30" rx="3" fill="#EBF8FF" stroke="#4299E1" stroke-width="0.8"/>
+    <text x="1010" y="18" text-anchor="middle" fill="#2C5282" font-size="7" font-weight="600">React + D3.js</text>
+    <text x="1010" y="30" text-anchor="middle" fill="#4299E1" font-size="6">WebSocket Real-Time</text>
+
+    <line x1="1075" y1="21" x2="1095" y2="21" stroke="#CBD5E0" stroke-width="1" marker-end="url(#arrowDark)"/>
+
+    <!-- Alert -->
+    <rect x="1100" y="6" width="140" height="30" rx="3" fill="#EBF8FF" stroke="#2C5282" stroke-width="0.8"/>
+    <text x="1170" y="18" text-anchor="middle" fill="#2C5282" font-size="7" font-weight="600">Twilio / Telegram Bot</text>
+    <text x="1170" y="30" text-anchor="middle" fill="#4299E1" font-size="6">Alert Dispatch Engine</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LEGEND -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(30, 540)">
+    <rect x="0" y="0" width="520" height="60" rx="5" fill="#F7FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="14" y="16" fill="#4A5568" font-size="8" font-weight="700" letter-spacing="0.5">LEGEND</text>
+
+    <!-- Blue line -->
+    <line x1="14" y1="34" x2="70" y2="34" stroke="#3B6FA0" stroke-width="2"/>
+    <polygon points="70,34 64,31 64,37" fill="#3B6FA0"/>
+    <text x="80" y="38" fill="#4A5568" font-size="8">Acoustic &amp; Sensor Data Flow</text>
+
+    <!-- Green line -->
+    <line x1="275" y1="34" x2="331" y2="34" stroke="#3A8A6A" stroke-width="2"/>
+    <polygon points="331,34 325,31 325,37" fill="#3A8A6A"/>
+    <text x="341" y="38" fill="#4A5568" font-size="8">Telemetry &amp; Analytical Output</text>
+
+    <!-- Section colors -->
+    <rect x="14" y="46" width="10" height="10" rx="2" fill="#ED8936" opacity="0.7"/>
+    <text x="30" y="55" fill="#718096" font-size="7">Sensing</text>
+    <rect x="85" y="46" width="10" height="10" rx="2" fill="#4299E1" opacity="0.7"/>
+    <text x="101" y="55" fill="#718096" font-size="7">Edge</text>
+    <rect x="145" y="46" width="10" height="10" rx="2" fill="#9F7AEA" opacity="0.7"/>
+    <text x="161" y="55" fill="#718096" font-size="7">Telemetry</text>
+    <rect x="225" y="46" width="10" height="10" rx="2" fill="#48BB78" opacity="0.7"/>
+    <text x="241" y="55" fill="#718096" font-size="7">Backend</text>
+    <rect x="305" y="46" width="10" height="10" rx="2" fill="#4299E1" opacity="0.7"/>
+    <text x="321" y="55" fill="#718096" font-size="7">Dashboard</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION TIER NUMBERS (Large background) -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text x="165" y="410" text-anchor="middle" fill="#ED8936" font-size="60" font-weight="800" opacity="0.06">1</text>
+  <text x="510" y="410" text-anchor="middle" fill="#4299E1" font-size="60" font-weight="800" opacity="0.06">2</text>
+  <text x="855" y="410" text-anchor="middle" fill="#9F7AEA" font-size="60" font-weight="800" opacity="0.06">3</text>
+  <text x="1200" y="410" text-anchor="middle" fill="#48BB78" font-size="60" font-weight="800" opacity="0.06">4</text>
+  <text x="1580" y="410" text-anchor="middle" fill="#4299E1" font-size="60" font-weight="800" opacity="0.06">5</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- BOTTOM FOOTER -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="0" y="620" width="1780" height="30" rx="0" fill="#1A202C"/>
+  <text x="890" y="639" text-anchor="middle" fill="#718096" font-size="8" letter-spacing="0.5">System Architecture Diagram — Acoustic Compressed-Air Leakage Detection IoT Platform</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- KEY PERFORMANCE METRICS STRIP -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(30, 580)">
+    <rect x="0" y="0" width="1720" height="30" rx="4" fill="#EDF2F7" stroke="#E2E8F0" stroke-width="0.8"/>
+    <text x="20" y="19" fill="#4A5568" font-size="7.5" font-weight="700">KEY SPECS</text>
+
+    <text x="140" y="19" fill="#718096" font-size="7">■</text>
+    <text x="150" y="19" fill="#4A5568" font-size="7" font-weight="600">Detection: 20–40 kHz Ultrasonic</text>
+
+    <text x="370" y="19" fill="#718096" font-size="7">■</text>
+    <text x="380" y="19" fill="#4A5568" font-size="7" font-weight="600">Accuracy: ±0.6 m Spatial Pinpointing</text>
+
+    <text x="610" y="19" fill="#718096" font-size="7">■</text>
+    <text x="620" y="19" fill="#4A5568" font-size="7" font-weight="600">Range: 3–15 km LoRaWAN</text>
+
+    <text x="790" y="19" fill="#718096" font-size="7">■</text>
+    <text x="800" y="19" fill="#4A5568" font-size="7" font-weight="600">Resolution: 1024-pt FFT</text>
+
+    <text x="960" y="19" fill="#718096" font-size="7">■</text>
+    <text x="970" y="19" fill="#4A5568" font-size="7" font-weight="600">Standard: ISO 11011 Compressed Air</text>
+
+    <text x="1200" y="19" fill="#718096" font-size="7">■</text>
+    <text x="1210" y="19" fill="#4A5568" font-size="7" font-weight="600">Edge AI: TinyML Leak Classifier</text>
+
+    <text x="1420" y="19" fill="#718096" font-size="7">■</text>
+    <text x="1430" y="19" fill="#4A5568" font-size="7" font-weight="600">Latency: &lt; 200 ms End-to-End</text>
+  </g>
+
+</svg>
+</div>
+</body>
+</html>

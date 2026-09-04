@@ -1,0 +1,393 @@
+[
+  {
+    "timestamp": "2026-08-23T15:36:01.020170",
+    "image": "scan_6b69bc2fb5_WhatsApp_Image_2026-08-23_at_3.30.49_PM.jpeg",
+    "cnn_prediction": {
+      "name": "Corn___healthy",
+      "crop": "Corn",
+      "disease": "Healthy",
+      "confidence": 76.72,
+      "raw_label": "Corn___healthy"
+    },
+    "gemini_prediction": {
+      "name": "Cucumber (Cucumis sativus) — Cucurbit Yellow Stunting Disorder Virus (CYSDV)",
+      "crop": "Cucumber (Cucumis sativus)",
+      "disease": "Cucurbit Yellow Stunting Disorder Virus (CYSDV)",
+      "confidence": 90.0
+    }
+  },
+  {
+    "timestamp": "2026-08-23T15:51:14.115933",
+    "image": "scan_8162da3b82_WhatsApp_Image_2026-08-23_at_3.30.49_PM.jpeg",
+    "cnn_prediction": {
+      "name": "Corn___healthy",
+      "crop": "Corn",
+      "disease": "Healthy",
+      "confidence": 76.72,
+      "raw_label": "Corn___healthy"
+    },
+    "gemini_prediction": {
+      "name": "Cucumber — Magnesium Deficiency",
+      "crop": "Cucumber",
+      "disease": "Magnesium Deficiency",
+      "confidence": 92.0
+    }
+  },
+  {
+    "timestamp": "2026-08-23T15:53:38.491920",
+    "image": "scan_72c59683dc_Downy-mildew-on-leaf.png",
+    "cnn_prediction": {
+      "name": "Corn___Northern_Leaf_Blight",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "confidence": 63.01,
+      "raw_label": "Corn___Northern_Leaf_Blight"
+    },
+    "gemini_prediction": {
+      "name": "Cucumber — Cucurbit Downy Mildew",
+      "crop": "Cucumber",
+      "disease": "Cucurbit Downy Mildew",
+      "confidence": 98.0
+    }
+  },
+  {
+    "timestamp": "2026-08-23T15:55:11.687359",
+    "image": "scan_e3c778701b_Downy-mildew-on-leaf.png",
+    "cnn_prediction": {
+      "name": "Corn___Northern_Leaf_Blight",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "confidence": 63.01,
+      "raw_label": "Corn___Northern_Leaf_Blight"
+    },
+    "gemini_prediction": {
+      "name": "Cucumber — Cucurbit Downy Mildew",
+      "crop": "Cucumber",
+      "disease": "Cucurbit Downy Mildew",
+      "confidence": 98.0
+    }
+  },
+  {
+    "timestamp": "2026-08-23T15:55:31.941386",
+    "image": "scan_675220ea52_017d3d86-12bf-4280-8929-10dcd504ac46___Rutg._HL_3671_90deg.jpg",
+    "cnn_prediction": {
+      "name": "Peach___healthy",
+      "crop": "Peach",
+      "disease": "Healthy",
+      "confidence": 100.0,
+      "raw_label": "Peach___healthy"
+    },
+    "gemini_prediction": {
+      "name": "Peach (Prunus persica) (Healthy)",
+      "crop": "Peach (Prunus persica)",
+      "disease": "Healthy",
+      "confidence": 96.5
+    }
+  },
+  {
+    "timestamp": "2026-08-23T16:02:42.595679",
+    "image": "scan_936bbf5f99_Cedar-Apple-Rust-on-Foliage.jpg",
+    "cnn_prediction": {
+      "name": "Corn___Common_rust",
+      "crop": "Corn",
+      "disease": "Common Rust",
+      "confidence": 95.76,
+      "raw_label": "Corn___Common_rust"
+    },
+    "gemini_prediction": {
+      "name": "Apple — Cedar Apple Rust",
+      "crop": "Apple",
+      "disease": "Cedar Apple Rust",
+      "confidence": 98.0
+    }
+  },
+  {
+    "timestamp": "2026-08-23T16:48:44.686995",
+    "image": "scan_b096533118_WhatsApp_Image_2026-08-23_at_4.41.52_PM.jpeg",
+    "cnn_prediction": {
+      "name": "Tomato___healthy",
+      "crop": "Tomato",
+      "disease": "Healthy",
+      "confidence": 67.69,
+      "raw_label": "Tomato___healthy"
+    },
+    "gemini_prediction": {
+      "name": "Bamboo — Bamboo Leaf Blight",
+      "crop": "Bamboo",
+      "disease": "Bamboo Leaf Blight",
+      "confidence": 88.0
+    }
+  },
+  {
+    "timestamp": "2026-08-24T22:56:23.560647",
+    "image": "scan_99e766f2fd_scan_07e850db45_WhatsApp_Image_2026-08-23_at_3.30.49_PM.jpeg",
+    "cnn_prediction": {
+      "name": "Corn___healthy",
+      "crop": "Corn",
+      "disease": "Healthy",
+      "confidence": 76.72,
+      "raw_label": "Corn___healthy"
+    },
+    "gemini_prediction": {
+      "name": "Cucumber (Cucumis sativus) — Magnesium Deficiency",
+      "crop": "Cucumber (Cucumis sativus)",
+      "disease": "Magnesium Deficiency",
+      "confidence": 92.5
+    }
+  },
+  {
+    "timestamp": "2026-08-24T23:09:19.528999",
+    "image": "scan_d023924596_Downy-mildew-on-leaf.png",
+    "cnn_prediction": {
+      "name": "Corn___Northern_Leaf_Blight",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "confidence": 63.01,
+      "raw_label": "Corn___Northern_Leaf_Blight"
+    },
+    "gemini_prediction": {
+      "name": "Cucumber — Downy Mildew",
+      "crop": "Cucumber",
+      "disease": "Downy Mildew",
+      "confidence": 98.5
+    }
+  },
+  {
+    "timestamp": "2026-08-24T23:56:25.242902",
+    "image": "scan_330b6a3fdf_Cedar-Apple-Rust-on-Foliage.jpg",
+    "cnn_prediction": {
+      "name": "Corn___Common_rust",
+      "crop": "Corn",
+      "disease": "Common Rust",
+      "confidence": 95.76,
+      "raw_label": "Corn___Common_rust"
+    },
+    "gemini_prediction": {
+      "name": "Apple — Cedar Apple Rust",
+      "crop": "Apple",
+      "disease": "Cedar Apple Rust",
+      "confidence": 98.0
+    }
+  },
+  {
+    "timestamp": "2026-08-25T00:40:51.467884",
+    "image": "scan_24a6cedf0b_WhatsApp_Image_2026-08-23_at_3.30.49_PM.jpeg",
+    "cnn_prediction": {
+      "name": "Corn___healthy",
+      "crop": "Corn",
+      "disease": "Healthy",
+      "confidence": 76.72,
+      "raw_label": "Corn___healthy"
+    },
+    "gemini_prediction": {
+      "name": "Cucumber (Cucumis sativus) — Squash Silverleaf Disorder (Whitefly Infestation)",
+      "crop": "Cucumber (Cucumis sativus)",
+      "disease": "Squash Silverleaf Disorder (Whitefly Infestation)",
+      "confidence": 92.0
+    }
+  },
+  {
+    "timestamp": "2026-08-25T01:37:24.429596",
+    "image": "scan_3ab042d9c6_Downy-mildew-on-leaf.png",
+    "cnn_prediction": {
+      "name": "Corn___Northern_Leaf_Blight",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "confidence": 63.01,
+      "raw_label": "Corn___Northern_Leaf_Blight"
+    },
+    "gemini_prediction": {
+      "name": "Cucumber — Downy Mildew",
+      "crop": "Cucumber",
+      "disease": "Downy Mildew",
+      "confidence": 98.0
+    }
+  },
+  {
+    "timestamp": "2026-08-25T18:14:03.584731",
+    "image": "scan_3cbaf20e2e_Downy-mildew-on-leaf.png",
+    "cnn_prediction": {
+      "name": "Corn___Northern_Leaf_Blight",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "confidence": 63.01,
+      "raw_label": "Corn___Northern_Leaf_Blight"
+    },
+    "gemini_prediction": {
+      "name": "Cucumber — Cucurbit Downy Mildew",
+      "crop": "Cucumber",
+      "disease": "Cucurbit Downy Mildew",
+      "confidence": 98.0
+    }
+  },
+  {
+    "timestamp": "2026-08-25T20:21:25.973043",
+    "image": "scan_a53b35e2ae_Downy-mildew-on-leaf.png",
+    "cnn_prediction": {
+      "name": "Corn___Northern_Leaf_Blight",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "confidence": 63.01,
+      "raw_label": "Corn___Northern_Leaf_Blight"
+    },
+    "gemini_prediction": {
+      "name": "Cucumber — Downy Mildew",
+      "crop": "Cucumber",
+      "disease": "Downy Mildew",
+      "confidence": 98.2
+    }
+  },
+  {
+    "timestamp": "2026-08-25T23:53:31.166121",
+    "image": "scan_8310d7ad88_Cedar-Apple-Rust-on-Foliage.jpg",
+    "cnn_prediction": {
+      "name": "Corn___Common_rust",
+      "crop": "Corn",
+      "disease": "Common Rust",
+      "confidence": 95.76,
+      "raw_label": "Corn___Common_rust"
+    },
+    "gemini_prediction": {
+      "name": "Apple — Cedar Apple Rust",
+      "crop": "Apple",
+      "disease": "Cedar Apple Rust",
+      "confidence": 98.5
+    }
+  },
+  {
+    "timestamp": "2026-08-26T01:49:29.341114",
+    "image": "scan_156961a6f4_Downy-mildew-on-leaf.png",
+    "cnn_prediction": {
+      "name": "Corn___Northern_Leaf_Blight",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "confidence": 63.01,
+      "raw_label": "Corn___Northern_Leaf_Blight"
+    },
+    "gemini_prediction": {
+      "name": "Cucumber — Downy Mildew",
+      "crop": "Cucumber",
+      "disease": "Downy Mildew",
+      "confidence": 98.5
+    }
+  },
+  {
+    "timestamp": "2026-08-26T03:40:07.766627",
+    "image": "scan_f148a97bda_XbaekKoHpAEyhBY2UzgcXB.jpg",
+    "cnn_prediction": {
+      "name": "Tomato___Early_blight",
+      "crop": "Tomato",
+      "disease": "Early Blight",
+      "confidence": 97.85,
+      "raw_label": "Tomato___Early_blight"
+    },
+    "gemini_prediction": {
+      "name": "Apple — Apple Scab",
+      "crop": "Apple",
+      "disease": "Apple Scab",
+      "confidence": 93.5
+    }
+  },
+  {
+    "timestamp": "2026-08-26T04:53:37.219673",
+    "image": "scan_2426544efd_Cedar-Apple-Rust-on-Foliage.jpg",
+    "cnn_prediction": {
+      "name": "Corn___Common_rust",
+      "crop": "Corn",
+      "disease": "Common Rust",
+      "confidence": 95.76,
+      "raw_label": "Corn___Common_rust"
+    },
+    "gemini_prediction": {
+      "name": "Apple — Cedar Apple Rust",
+      "crop": "Apple",
+      "disease": "Cedar Apple Rust",
+      "confidence": 98.0
+    }
+  },
+  {
+    "timestamp": "2026-08-26T10:34:10.203785",
+    "image": "scan_436083da82_Cedar-Apple-Rust-on-Foliage.jpg",
+    "cnn_prediction": {
+      "name": "Corn___Common_rust",
+      "crop": "Corn",
+      "disease": "Common Rust",
+      "confidence": 95.76,
+      "raw_label": "Corn___Common_rust"
+    },
+    "gemini_prediction": {
+      "name": "Apple — Cedar Apple Rust",
+      "crop": "Apple",
+      "disease": "Cedar Apple Rust",
+      "confidence": 98.0
+    }
+  },
+  {
+    "timestamp": "2026-08-26T12:06:04.133442",
+    "image": "scan_15b68fcbab_Cedar-Apple-Rust-on-Foliage.jpg",
+    "cnn_prediction": {
+      "name": "Corn___Common_rust",
+      "crop": "Corn",
+      "disease": "Common Rust",
+      "confidence": 95.76,
+      "raw_label": "Corn___Common_rust"
+    },
+    "gemini_prediction": {
+      "name": "Apple — Cedar Apple Rust",
+      "crop": "Apple",
+      "disease": "Cedar Apple Rust",
+      "confidence": 98.0
+    }
+  },
+  {
+    "timestamp": "2026-08-26T12:20:50.070098",
+    "image": "scan_6ee386a118_Cedar-Apple-Rust-on-Foliage.jpg",
+    "cnn_prediction": {
+      "name": "Corn___Common_rust",
+      "crop": "Corn",
+      "disease": "Common Rust",
+      "confidence": 95.76,
+      "raw_label": "Corn___Common_rust"
+    },
+    "gemini_prediction": {
+      "name": "Apple — Cedar Apple Rust",
+      "crop": "Apple",
+      "disease": "Cedar Apple Rust",
+      "confidence": 98.0
+    }
+  },
+  {
+    "timestamp": "2026-08-26T16:28:19.259157",
+    "image": "scan_391ee1c884_Cedar-Apple-Rust-on-Foliage.jpg",
+    "cnn_prediction": {
+      "name": "Corn___Common_rust",
+      "crop": "Corn",
+      "disease": "Common Rust",
+      "confidence": 95.76,
+      "raw_label": "Corn___Common_rust"
+    },
+    "gemini_prediction": {
+      "name": "Apple — Cedar Apple Rust",
+      "crop": "Apple",
+      "disease": "Cedar Apple Rust",
+      "confidence": 98.0
+    }
+  },
+  {
+    "timestamp": "2026-08-26T18:36:21.669719",
+    "image": "scan_c9bb74ca32_Cedar-Apple-Rust-on-Foliage.jpg",
+    "cnn_prediction": {
+      "name": "Corn___Common_rust",
+      "crop": "Corn",
+      "disease": "Common Rust",
+      "confidence": 95.76,
+      "raw_label": "Corn___Common_rust"
+    },
+    "gemini_prediction": {
+      "name": "Apple — Cedar Apple Rust",
+      "crop": "Apple",
+      "disease": "Cedar Apple Rust",
+      "confidence": 98.0
+    }
+  }
+]

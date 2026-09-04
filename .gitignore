@@ -1,0 +1,85 @@
+# =====================================================================
+# KRONOS & Plant Disease Detection — Comprehensive .gitignore
+# =====================================================================
+
+# ── 1. Security & Environment Variables (NEVER COMMIT) ───────────────
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+**/secrets.toml
+*keys*.txt
+*.pem
+*.key
+
+# ── 2. Python Bytecode & Caches ───────────────────────────────────────
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── 3. Virtual Environments ───────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── 4. Deprecated, Backups & Trash Folders ────────────────────────────
+trash/
+**/trash/
+backup*/
+**/backup*/
+*.bak
+
+# ── 5. Scratch & Temp Scripts ─────────────────────────────────────────
+_build*.py
+**/_build*.py
+*.lnk
+**/selfie*.html
+selfie*.html
+kronos_dashboard_mockup_*.png
+
+# ── 6. Root Redundant / Legacy Duplicates ─────────────────────────────
+# Root static and templates were legacy drafts (current ones live in Gemin_i_caht/)
+/templates/
+/static/
+
+# ── 7. Tool Caches & Tool Artifacts ───────────────────────────────────
+.freebuff/
+**/.freebuff/
+.streamlit/
+**/.streamlit/
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# ── 8. Runtime Generated Data & Uploads ───────────────────────────────
+# Keep directory structure via .gitkeep, ignore generated runtime state
+data/parquet/
+data/state/*
+!data/state/.gitkeep
+data/reports/*
+!data/reports/.gitkeep
+
+# Plant disease leaf scan user uploads (ignore test photos, keep folder)
+plant_disease_detection/uploads/*
+!plant_disease_detection/uploads/.gitkeep
+plant_disease_detection/dataset/
+
+# ── 9. Large Presentation Documents (>50MB) ───────────────────────────
+# docs/KRONOS.pdf is ~51.7 MB (exceeds recommended GitHub 50MB limit)
+docs/*.pdf
+
+# ── 10. Explicit Whitelist: ML Model Weights ──────────────────────────
+# Ensure the trained plant disease weights are tracked and uploaded
+!plant_disease_detection/model/plant_disease_weights.weights.h5
+!plant_disease_detection/model/class_names.json

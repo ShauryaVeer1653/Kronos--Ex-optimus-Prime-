@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="en" data-theme="{{ theme }}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>KRONOS Heatmap</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><style>
+:root,[data-theme="dark"]{--bg:#000;--gb:rgba(255,255,255,.06);--gbh:rgba(255,255,255,.1);--gbd:rgba(255,255,255,.12);--gs:0 8px 32px rgba(0,0,0,.4);--t:#fff;--t2:rgba(255,255,255,.65);--t3:rgba(255,255,255,.4);--ibg:rgba(0,0,0,.3);--ibd:rgba(255,255,255,.08);--ac:#34c759;--ag:rgba(52,199,89,.4);--o1:rgba(52,199,89,.4);--o2:rgba(0,122,255,.3);--o3:rgba(88,86,214,.2);color-scheme:dark}
+[data-theme="light"]{--bg:#f5f5f7;--gb:rgba(255,255,255,.6);--gbh:rgba(255,255,255,.8);--gbd:rgba(0,0,0,.08);--gs:0 4px 12px rgba(0,0,0,.05);--t:#1d1d1f;--t2:#6e6e73;--t3:#aeaeb2;--ibg:rgba(0,0,0,.05);--ibd:rgba(0,0,0,.08);--ac:#34c759;--ag:rgba(52,199,89,.2);--o1:rgba(52,199,89,.2);--o2:rgba(0,122,255,.15);--o3:rgba(88,86,214,.1);color-scheme:light}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:radial-gradient(600px circle at 10% 10%,var(--o1),transparent 40%),radial-gradient(500px circle at 90% 90%,var(--o2),transparent 40%),radial-gradient(400px circle at 50% 50%,var(--o3),transparent 40%),var(--bg);color:var(--t);background-attachment:fixed}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--ibd);border-radius:3px}
+.ap{display:flex;min-height:100vh}
+.sb{width:280px;min-width:280px;background:var(--gb);backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);border-right:1px solid var(--gbd);padding:24px;overflow-y:auto;position:sticky;top:0;height:100vh}
+.sb h3{font-size:.7rem;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.05em;margin:20px 0 8px}.sb h3:first-child{margin-top:0}
+.sb label{display:block;font-size:.75rem;font-weight:500;color:var(--t2);margin:10px 0 4px}
+.sb select,.sb input[type=date],.sb input[type=time]{width:100%;background:var(--ibg);border:1px solid var(--ibd);border-radius:12px;padding:8px 12px;color:var(--t);font-family:'Inter',sans-serif;font-size:.85rem;outline:none;transition:border-color .2s}
+.sb select:focus,.sb input:focus{border-color:var(--ac)}
+.sb input[type=range]{width:100%;-webkit-appearance:none;height:4px;background:var(--ibd);border-radius:2px;outline:none;margin:6px 0}
+.sb input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--ac);border:2px solid var(--bg);box-shadow:0 0 0 3px var(--ag);cursor:pointer}
+.sb input[type=checkbox]{width:16px;height:16px;accent-color:var(--ac);margin-right:6px;vertical-align:middle}
+.rv{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--t2);float:right}
+.rb{width:100%;margin-top:12px;padding:10px;background:var(--gb);border:1px solid var(--gbd);border-radius:12px;color:var(--t);font-family:'Inter',sans-serif;font-weight:500;font-size:.85rem;cursor:pointer;transition:all .2s}
+.rb:hover{background:var(--ac);color:#fff;border-color:var(--ac)}
+.ar{margin-top:8px;padding:10px 12px;background:var(--ibg);border:1px solid var(--ibd);border-radius:10px;display:flex;align-items:center;gap:8px}
+.ar .al{font-size:.5rem;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:.1em;display:inline;padding:3px 7px;background:rgba(52,199,89,.1);border:1px solid rgba(52,199,89,.2);border-radius:5px}
+.ar .av{font-weight:600;font-size:.85rem;color:var(--t)}
+.cb{background:var(--ibg);border:1px solid var(--ibd);border-radius:12px;padding:12px;font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--t)}.cb .cl{font-size:.65rem;color:var(--t3);margin-bottom:2px;margin-top:8px}.cb .cl:first-child{margin-top:0}.cb .cv{font-weight:600}
+.mn{flex:1;overflow-y:auto}
+.tp{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:16px 32px;background:var(--gb);backdrop-filter:blur(40px);border-bottom:1px solid var(--gbd)}
+.bd{display:flex;align-items:center;gap:16px}.bd h1{font-size:1.5rem;font-weight:700;letter-spacing:-.02em;color:var(--t)}
+.sp{display:inline-flex;align-items:center;gap:8px;padding:5px 12px;border-radius:14px;font-size:.7rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.sp.lv{background:rgba(52,199,89,.15);border:1px solid rgba(52,199,89,.3);color:var(--ac)}
+.sp.of{background:rgba(255,159,10,.15);border:1px solid rgba(255,159,10,.3);color:#ff9f0a}
+.sd{width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 0 3px currentColor;animation:pu 2s ease-in-out infinite}.sp.of .sd{animation:none}
+@keyframes pu{0%,100%{opacity:1}50%{opacity:.4}}
+.lr{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--t2);padding:4px 10px;background:var(--ibg);border:1px solid var(--ibd);border-radius:8px}
+.tt{background:var(--gb);border:1px solid var(--gbd);border-radius:12px;padding:8px 12px;font-size:1.1rem;cursor:pointer;transition:all .2s}.tt:hover{background:var(--gbh)}
+.ct{padding:24px 32px}
+.alr{position:relative;overflow:hidden;margin:12px 0;padding:16px 20px 16px 24px;background:var(--gb);backdrop-filter:blur(40px);border:1px solid var(--gbd);border-radius:16px;color:var(--t);font-size:.9rem;line-height:1.5}
+.alr::before{content:'';position:absolute;inset:0 auto 0 0;width:4px}
+.alr.er::before{background:#ff453a;box-shadow:0 0 12px #ff453a}
+.alr.wn::before{background:#ff9f0a;box-shadow:0 0 12px #ff9f0a}
+.alr.in::before{background:var(--ac);box-shadow:0 0 12px var(--ac)}
+.alr strong{color:var(--ac);font-weight:700}
+.gc{background:var(--gb);backdrop-filter:blur(40px) saturate(180%);border:1px solid var(--gbd);border-radius:24px;padding:24px;box-shadow:var(--gs);margin-bottom:16px}
+.gc h3{font-size:1rem;font-weight:600;color:var(--t);margin-bottom:12px}
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}
+.pk{background:var(--ibg);border:1px solid var(--ibd);border-radius:16px;padding:14px;transition:transform .2s,border-color .2s}.pk:hover{transform:translateY(-2px);border-color:var(--ac)}
+.pl{font-size:.6rem;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.pv{font-family:'JetBrains Mono',monospace;font-size:1.15rem;font-weight:600;color:var(--t)}
+.mp{border-radius:24px;overflow:hidden;border:1px solid var(--gbd);box-shadow:var(--gs);margin-bottom:16px}
+.mp iframe{display:block;width:100%;height:500px;border:0}
+.brow{background:var(--gb);backdrop-filter:blur(40px);border:1px solid var(--gbd);border-radius:16px;padding:16px 20px;margin-bottom:16px}
+.cbl{font-size:.7rem;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+.cbs{height:10px;border-radius:5px;box-shadow:inset 0 1px 1px rgba(255,255,255,.1),0 2px 4px rgba(0,0,0,.1)}
+.cbt{display:flex;justify-content:space-between;margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;color:var(--t2)}
+.db{display:inline-block;margin-top:10px;padding:8px 16px;background:var(--gb);border:1px solid var(--gbd);border-radius:12px;color:var(--t);font-family:'Inter',sans-serif;font-weight:500;font-size:.85rem;text-decoration:none;transition:all .2s}
+.db:hover{background:var(--ac);color:#fff;border-color:var(--ac)}
+.mr{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.mk{background:var(--gb);backdrop-filter:blur(40px);border:1px solid var(--gbd);border-radius:16px;padding:16px;text-align:center}
+.mk .ml{font-size:.65rem;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.mk .mv{font-family:'JetBrains Mono',monospace;font-size:1.3rem;font-weight:600;color:var(--t)}
+@media(max-width:768px){.sb{display:none}.ap{flex-direction:column}.ct{padding:16px}.tp{padding:12px 16px;flex-wrap:wrap;gap:8px}.mr{grid-template-columns:repeat(2,1fr)}.mp iframe{height:400px}.pg{grid-template-columns:repeat(2,1fr)}}
+
+</style></head><body><div class="ap">
+<aside class="sb">
+<form method="GET" action="/heatmap">
+<input type="hidden" name="theme" value="{{ theme }}">
+<h3>Time Range</h3>
+<select name="time_range" onchange="this.form.submit()">
+{% for label in time_range_labels %}
+<option value="{{ label }}" {{ "selected" if label == selected_range }}>{{ label }}</option>
+{% endfor %}
+<option value="Custom range" {{ "selected" if is_custom }}>Custom range</option>
+</select>
+{% if is_custom %}
+<label>Start Date</label><input type="date" name="start_date" value="{{ start_date }}">
+<input type="time" name="start_time" value="{{ start_time }}">
+<label>End Date</label><input type="date" name="end_date" value="{{ end_date }}">
+<input type="time" name="end_time" value="{{ end_time }}">
+{% endif %}
+<div class="ar"><span class="al">Active Range</span><span class="av">{{ selected_range }}</span></div>
+<button type="submit" class="rb">Refresh Now</button>
+{% if show_controls %}
+<h3>Parameters</h3>
+<label>Soil Parameter</label>
+<select name="target" onchange="this.form.submit()">
+{% for p in parameters %}<option value="{{ p }}" {{ "selected" if p == target }}>{{ param_labels[p] }}</option>{% endfor %}</select>
+<label>Variogram Model</label>
+<select name="variogram" onchange="this.form.submit()">
+{% for vm in variogram_models %}<option value="{{ vm }}" {{ "selected" if vm == vario_model }}>{{ vm }}</option>{% endfor %}</select>
+<label>Variogram Lags <span class="rv">{{ nlags }}</span></label>
+<input type="range" name="nlags" min="4" max="20" value="{{ nlags }}" onchange="this.form.submit()">
+<label>Resolution <span class="rv">{{ grid_res }}</span></label>
+<input type="range" name="grid_res" min="50" max="300" value="{{ grid_res }}" step="10" onchange="this.form.submit()">
+<label>Opacity <span class="rv">{{ opacity }}</span></label>
+<input type="range" name="opacity" min="0.30" max="1.00" value="{{ opacity }}" step="0.05" onchange="this.form.submit()">
+<label style="margin-top:10px"><input type="checkbox" name="show_pts" value="1" {{ "checked" if show_pts }} onchange="this.form.submit()"> Show sample points</label>
+<label>Color Palette</label>
+<select name="cmap" onchange="this.form.submit()">
+{% for name in cmap_names %}<option value="{{ name }}" {{ "selected" if name == cmap_choice }}>{{ name }}</option>{% endfor %}</select>
+<label>Contrast (gamma) <span class="rv">{{ gamma }}</span></label>
+<input type="range" name="gamma" min="0.30" max="2.50" value="{{ gamma }}" step="0.10" onchange="this.form.submit()">
+<label>Softness <span class="rv">{{ blur_r }}</span></label>
+<input type="range" name="blur_r" min="0" max="6" value="{{ blur_r }}" onchange="this.form.submit()">
+{% endif %}
+{% if next_sample %}
+<h3>Next Best Sample</h3>
+<div class="cb"><div class="cl">LATITUDE</div><div class="cv">{{ "%.6f"|format(next_sample[0]) }}</div>
+<div class="cl">LONGITUDE</div><div class="cv">{{ "%.6f"|format(next_sample[1]) }}</div></div>
+{% endif %}
+</form></aside>
+<div class="mn">
+<header class="tp"><div class="bd"><h1>KRONOS</h1><span class="sp {{ status_cls }}"><span class="sd"></span>{{ status_text }}</span></div>
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap"><span class="lr">{{ latest_reading }}</span>
+<button class="tt" onclick="toggleTheme()">&#9728;&#65039;</button></div></header>
+<div class="ct">
+{% if error_msg %}<div class="alr er">{{ error_msg|safe }}</div>{% endif %}
+{% if warning_msg %}<div class="alr wn">{{ warning_msg|safe }}</div>{% endif %}
+{% if info_msg %}<div class="alr in">{{ info_msg|safe }}</div>{% endif %}
+{% if branch == "no_data" %}
+{% if last_known_vals %}<div class="gc"><h3>Last Known Reading</h3><div class="pg">
+{% for param, val in last_known_vals.items() %}<div class="pk"><div class="pl">{{ param_labels[param] }}</div><div class="pv">{{ "%.2f"|format(val) if val != 0 else "-" }}</div></div>{% endfor %}
+</div></div>{% endif %}
+{% elif branch == "no_gps" %}
+{% if range_caption %}<p style="font-size:.8rem;color:var(--t2);margin-bottom:12px">{{ range_caption }}</p>{% endif %}
+<div class="gc"><h3>Latest Sensor Readings</h3><div class="pg">
+{% for param, val in sensor_vals.items() %}<div class="pk"><div class="pl">{{ param_labels[param] }}</div><div class="pv">{{ "%.2f"|format(val) if val != 0 else "-" }}</div></div>{% endfor %}
+</div></div>
+{% elif branch == "full_map" %}
+<div class="mp"><iframe src="{{ map_src }}"></iframe></div>
+<div class="brow">
+<div class="cbl">{{ metric_label }} / {{ vario_model }} / {{ grid_res }}x{{ grid_res }} / gamma {{ gamma }} / {{ selected_range }}</div>
+<div class="cbs" style="background:{{ gradient_css }}"></div>
+<div class="cbt"><span>{{ "%.2f"|format(vmin_q) }}</span><span>{{ "%.2f"|format((vmin_q+vmax_q)/2) }}</span><span>{{ "%.2f"|format(vmax_q) }}</span></div>
+<a href="/download/map/{{ map_key }}" class="dl">Download Map</a></div>
+<div class="mr">
+<div class="mk"><div class="ml">Samples</div><div class="mv">{{ reading_count }}</div></div>
+<div class="mk"><div class="ml">Max</div><div class="mv">{{ "%.2f"|format(max_val) }}</div></div>
+<div class="mk"><div class="ml">Min</div><div class="mv">{{ "%.2f"|format(min_val) }}</div></div>
+<div class="mk"><div class="ml">Mean</div><div class="mv">{{ "%.2f"|format(mean_val) }}</div></div>
+</div>{% endif %}</div></div></div>
+<script>
+setTimeout(function(){location.reload()},15000);
+function toggleTheme(){var u=new URL(window.location);var c=u.searchParams.get("theme")||"dark";u.searchParams.set("theme",c==="dark"?"light":"dark");window.location=u;}
+</script></body></html>
